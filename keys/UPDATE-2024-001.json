@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "version": "1.0.1",
+  "changelog": "• Tarayıcı iyileştirildi\n• Hata düzeltmeleri\n• Performans artışı",
+  "files": [
+    {
+      "path": "src/js/main.js",
+      "type": "javascript"
+    }
+  ]
+}

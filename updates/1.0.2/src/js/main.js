@@ -129,7 +129,6 @@ function removeTaskbarButton(id) {
 }
 
 function openApp(appName) {
-  console.log('Opening app:', appName); // DEBUG
   switch(appName) {
     case 'notepad': openNotepad(); break;
     case 'calculator': openCalculator(); break;
@@ -139,7 +138,6 @@ function openApp(appName) {
     case 'system': openSystemInfo(); break;
     case 'settings': openSettings(); break;
     case 'file-manager': openFileManager(); break;
-    default: console.error('Unknown app:', appName);
   }
 }
 
@@ -312,47 +310,9 @@ async function applyUpdateKey() {
 }
 
 async function openFileManager() {
-  console.log('File Manager açılıyor...'); // DEBUG
-  const content = `<div style="display: flex; flex-direction: column; height: 100%;">
-    <div style="padding: 10px; background: #f5f5f5; border-bottom: 2px solid #e0e0e0; display: flex; gap: 10px; align-items: center;">
-      <button class="btn" onclick="fileManagerUp()">⬆ Üst</button>
-      <button class="btn" onclick="fileManagerRefresh()">🔄</button>
-      <div style="flex: 1; display: flex; align-items: center; background: white; border: 2px solid #e0e0e0; border-radius: 5px; padding: 5px 10px;">
-        <span style="margin-right: 10px;">📂</span>
-        <span id="fm-path">/</span>
-      </div>
-      <button class="btn" onclick="fileManagerNewFolder()">📁 Klasör</button>
-      <button class="btn" onclick="fileManagerUploadFile()">📤 Yükle</button>
-    </div>
-    <div style="padding: 10px; background: #e3f2fd; border-bottom: 1px solid #90caf9; display: flex; justify-content: space-between; font-size: 12px;">
-      <span id="fm-disk-info">Yükleniyor...</span>
-      <span id="fm-item-count">0 öğe</span>
-    </div>
-    <div id="fm-content" style="flex: 1; overflow-y: auto; padding: 15px; background: white;">
-      <div style="text-align: center; padding: 50px; color: #999;">Yükleniyor...</div>
-    </div>
-    <div id="fm-context-menu" style="display: none; position: absolute; background: white; border: 2px solid #ccc; border-radius: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 10000;">
-      <div class="context-item" onclick="contextOpenFile()">📂 Aç</div>
-      <div class="context-item" onclick="contextRename()">✏️ Yeniden Adlandır</div>
-      <div class="context-item" onclick="contextDelete()" style="color: #e81123;">🗑️ Sil</div>
-    </div>
-  </div>
-  <style>
-    .fm-item{padding:12px 15px;border:2px solid #e0e0e0;border-radius:8px;margin-bottom:8px;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:12px;background:white;}
-    .fm-item:hover{background:#f0f8ff;border-color:#667eea;transform:translateX(5px);}
-    .fm-item-icon{font-size:32px;}
-    .fm-item-info{flex:1;}
-    .fm-item-name{font-weight:600;font-size:14px;color:#333;}
-    .fm-item-details{font-size:11px;color:#999;margin-top:3px;}
-    .context-item{padding:10px 20px;cursor:pointer;font-size:13px;border-bottom:1px solid #f0f0f0;}
-    .context-item:hover{background:#f0f0f0;}
-    .context-item:last-child{border-bottom:none;}
-  </style>`;
-  
+  const content = '<div style="display: flex; flex-direction: column; height: 100%;"><div style="padding: 10px; background: #f5f5f5; border-bottom: 2px solid #e0e0e0; display: flex; gap: 10px; align-items: center;"><button class="btn" onclick="fileManagerUp()">⬆ Üst</button><button class="btn" onclick="fileManagerRefresh()">🔄</button><div style="flex: 1; display: flex; align-items: center; background: white; border: 2px solid #e0e0e0; border-radius: 5px; padding: 5px 10px;"><span style="margin-right: 10px;">📂</span><span id="fm-path">/</span></div><button class="btn" onclick="fileManagerNewFolder()">📁 Klasör</button><button class="btn" onclick="fileManagerUploadFile()">📤 Yükle</button></div><div style="padding: 10px; background: #e3f2fd; border-bottom: 1px solid #90caf9; display: flex; justify-content: space-between; font-size: 12px;"><span id="fm-disk-info">Yükleniyor...</span><span id="fm-item-count">0 öğe</span></div><div id="fm-content" style="flex: 1; overflow-y: auto; padding: 15px; background: white;"><div style="text-align: center; padding: 50px; color: #999;">Yükleniyor...</div></div><div id="fm-context-menu" style="display: none; position: absolute; background: white; border: 2px solid #ccc; border-radius: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 10000;"><div class="context-item" onclick="contextOpenFile()">📂 Aç</div><div class="context-item" onclick="contextRename()">✏️ Yeniden Adlandır</div><div class="context-item" onclick="contextDelete()" style="color: #e81123;">🗑️ Sil</div></div></div><style>.fm-item{padding:12px 15px;border:2px solid #e0e0e0;border-radius:8px;margin-bottom:8px;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:12px;background:white;}.fm-item:hover{background:#f0f8ff;border-color:#667eea;transform:translateX(5px);}.fm-item-icon{font-size:32px;}.fm-item-info{flex:1;}.fm-item-name{font-weight:600;font-size:14px;color:#333;}.fm-item-details{font-size:11px;color:#999;margin-top:3px;}.context-item{padding:10px 20px;cursor:pointer;font-size:13px;border-bottom:1px solid #f0f0f0;}.context-item:hover{background:#f0f0f0;}.context-item:last-child{border-bottom:none;}</style>';
   createWindow('file-manager', 'Dosya Yöneticisi', '📁', 900, 600, content);
-  
   setTimeout(async () => {
-    console.log('Loading file manager content...'); // DEBUG
     await loadFileManager('/');
     await updateDiskInfo();
   }, 100);
@@ -364,41 +324,24 @@ async function loadFileManager(path) {
   const result = await api.vfs.list(path);
   const content = document.getElementById('fm-content');
   const items = Object.entries(result);
-  
   if (items.length === 0) {
     content.innerHTML = '<div style="text-align: center; padding: 50px; color: #999;">Bu klasör boş</div>';
     document.getElementById('fm-item-count').textContent = '0 öğe';
     return;
   }
-  
   document.getElementById('fm-item-count').textContent = items.length + ' öğe';
   let html = '';
-  
   items.forEach(([name, item]) => {
     const icon = item.type === 'folder' ? '📁' : getFileIcon(name);
     const details = item.type === 'folder' ? 'Klasör' : (item.fileType || 'Dosya') + ' • ' + formatBytes(item.size || 0);
-    html += `<div class="fm-item" ondblclick="fileManagerOpen('${name}', '${item.type}')" oncontextmenu="showContextMenu(event, '${name}', '${item.type}')">
-      <div class="fm-item-icon">${icon}</div>
-      <div class="fm-item-info">
-        <div class="fm-item-name">${name}</div>
-        <div class="fm-item-details">${details}</div>
-      </div>
-    </div>`;
+    html += '<div class="fm-item" ondblclick="fileManagerOpen(\'' + name + '\', \'' + item.type + '\')" oncontextmenu="showContextMenu(event, \'' + name + '\', \'' + item.type + '\')"><div class="fm-item-icon">' + icon + '</div><div class="fm-item-info"><div class="fm-item-name">' + name + '</div><div class="fm-item-details">' + details + '</div></div></div>';
   });
-  
   content.innerHTML = html;
 }
 
 function getFileIcon(fileName) {
   const ext = fileName.split('.').pop().toLowerCase();
-  const icons = {
-    'txt':'📄','md':'📄','json':'📄',
-    'jpg':'🖼️','jpeg':'🖼️','png':'🖼️','gif':'🖼️',
-    'mp3':'🎵','wav':'🎵',
-    'mp4':'🎬','avi':'🎬',
-    'zip':'📦','rar':'📦',
-    'exe':'⚙️','pdf':'📕'
-  };
+  const icons = {'txt':'📄','md':'📄','json':'📄','jpg':'🖼️','jpeg':'🖼️','png':'🖼️','gif':'🖼️','mp3':'🎵','wav':'🎵','mp4':'🎬','avi':'🎬','zip':'📦','rar':'📦','exe':'⚙️','pdf':'📕'};
   return icons[ext] || '📄';
 }
 

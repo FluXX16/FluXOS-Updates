@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "version": "1.0.2",
+  "changelog": "• Dosya Sistemi baştan yenilendi!",
+  "files": [
+    {
+      "path": "src/js/1.0.2/main.js",
+      "type": "javascript"
+    }
+  ]
+}

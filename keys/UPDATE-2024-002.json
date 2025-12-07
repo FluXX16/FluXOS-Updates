@@ -4,7 +4,7 @@
   "changelog": "• Dosya Sistemi baştan yenilendi!",
   "files": [
     {
-      "path": "1.0.2/src/js/main.js",
+      "path": "updates/1.0.2/src/js/main.js",
       "type": "javascript"
     }
   ]

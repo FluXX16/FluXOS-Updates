@@ -329,14 +329,14 @@ console.log(generateKey('1.0.3', 'BETA'));
 
 ### Bize Ulaşın
 
-[![Discord](https://img.shields.io/badge/Discord-Join-7289da?style=for-the-badge&logo=discord)](https://discord.gg/fluxos)
+[![Discord](https://img.shields.io/badge/Discord-Join-7289da?style=for-the-badge&logo=discord)](https://discord.gg/t4DpPzggC7)
 [![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-black?style=for-the-badge&logo=github)](https://github.com/FluXX16/FluXOS/issues)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:support@fluxos.dev)
 
 ### Sosyal Medya
 
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1da1f2?style=for-the-badge&logo=twitter)](https://twitter.com/fluxos)
-[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube)](https://youtube.com/@fluxos)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-1da1f2?style=for-the-badge&logo=twitter)](https://twitter.com)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@floirant91)
 
 </div>
 

@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "version": "1.0.2",
+  "changelog": "✨ YENİ: Dosya Yöneticisi eklendi!\n🔧 Performans iyileştirmeleri\n🐛 Hata düzeltmeleri",
+  "files": [
+    {
+      "path": "src/js/main.js"
+    }
+  ]
+}

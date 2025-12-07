@@ -1,10 +1,21 @@
 {
-  "valid": true,
+  "name": "fluxos",
   "version": "1.0.2",
-  "changelog": "✨ YENİ: Dosya Yöneticisi eklendi!\n🔧 Performans iyileştirmeleri\n🐛 Hata düzeltmeleri",
-  "files": [
-    {
-      "path": "src/js/main.js"
-    }
-  ]
+  "description": "FluXOS - Electron Desktop OS",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["desktop", "os", "electron"],
+  "author": "FluXX16",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^latest"
+  },
+  "dependencies": {
+    "axios": "^latest",
+    "electron-store": "^latest",
+    "electron-updater": "^latest"
+  }
 }

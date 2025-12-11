@@ -1,1558 +1,1580 @@
-# 🚀 FluXOS Güncelleme Merkezi / FluXOS Updates Repository
+# 🌊 FluXOS - The Flow of Innovation
 
 <div align="center">
 
-![FluXOS Banner](https://via.placeholder.com/1200x300/667eea/ffffff?text=FluXOS+Updates+Repository)
+```
+  ███████╗██╗     ██╗   ██╗██╗  ██╗ ██████╗ ███████╗
+  ██╔════╝██║     ██║   ██║╚██╗██╔╝██╔═══██╗██╔════╝
+  █████╗  ██║     ██║   ██║ ╚███╔╝ ██║   ██║███████╗
+  ██╔══╝  ██║     ██║   ██║ ██╔██╗ ██║   ██║╚════██║
+  ██║     ███████╗╚██████╔╝██╔╝ ██╗╚██████╔╝███████║
+  ╚═╝     ╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+```
 
-**Resmi FluXOS Güncelleme ve Dağıtım Merkezi**  
-**Official FluXOS Update & Distribution Center**
+### **Tamamen Sıfırdan Yazılmış Modern İşletim Sistemi**
 
-[![Version](https://img.shields.io/badge/Versiyon-1.0.2-blue.svg?style=for-the-badge)](https://github.com/FluXX16/FluXOS-Updates)
-[![License](https://img.shields.io/badge/Lisans-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Updates](https://img.shields.io/badge/G%C3%BCncellemeler-Aktif-brightgreen.svg?style=for-the-badge)]()
-[![Platform](https://img.shields.io/badge/Platform-Electron-47848f.svg?style=for-the-badge&logo=electron)](https://www.electronjs.org/)
-[![Stars](https://img.shields.io/github/stars/FluXX16/FluXOS-Updates?style=for-the-badge&logo=github)](https://github.com/FluXX16/FluXOS-Updates/stargazers)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square&logo=github-actions)](https://github.com/FluXX16/FluXOS-Updates)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&logo=opensourceinitiative)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-x86--32bit-orange?style=flat-square&logo=intel)](https://github.com/FluXX16/FluXOS-Updates)
+[![Language](https://img.shields.io/badge/language-C%20%7C%20Assembly-red?style=flat-square&logo=c)](https://github.com/FluXX16/FluXOS-Updates)
+[![Stars](https://img.shields.io/github/stars/FluXX16/FluXOS-Updates?style=flat-square&logo=github)](https://github.com/FluXX16/FluXOS-Updates/stargazers)
+[![Forks](https://img.shields.io/github/forks/FluXX16/FluXOS-Updates?style=flat-square&logo=github)](https://github.com/FluXX16/FluXOS-Updates/network)
 
-[🇹🇷 Türkçe](#-türkçe-dokümantasyon) | [🇬🇧 English](#-english-documentation)
+**[📥 İndir](#-sürümler)** • **[📖 Dokümantasyon](#-i̇çindekiler)** • **[🎮 Demo](#-ekran-görüntüleri)** • **[💬 Discord](https://discord.gg/fluxos)** • **[🐛 Hata Bildir](https://github.com/FluXX16/FluXOS-Updates/issues)**
+
+---
+
+![FluXOS Desktop Preview](https://via.placeholder.com/800x450/008080/FFFFFF?text=FluXOS+Desktop+Screenshot)
+
+*Windows 95 nostalji hissi ile modern işletim sistemi deneyimi*
 
 </div>
 
 ---
-
-# 🇹🇷 TÜRKÇE DOKÜMANTASYON
 
 ## 📋 İçindekiler
 
-- [🌟 Genel Bakış](#-genel-bakış-tr)
-- [✨ Özellikler](#-özellikler-tr)
-- [🔧 Nasıl Çalışır?](#-nasıl-çalışır-tr)
-- [📥 Güncelleme Kurulumu](#-güncelleme-kurulumu-tr)
-- [📁 Repository Yapısı](#-repository-yapısı-tr)
-- [🔑 Key Türleri](#-key-türleri-tr)
-- [📊 Sürüm Geçmişi](#-sürüm-geçmişi-tr)
-- [👨‍💻 Geliştirici Notları](#-geliştirici-notları-tr)
-- [🛡️ Güvenlik](#️-güvenlik-tr)
-- [📞 İletişim](#-iletişim-tr)
+- [🌟 Genel Bakış](#-genel-bakış)
+- [🎯 FluXOS Sürümleri](#-fluxos-sürümleri)
+- [✨ Özellikler](#-özellikler)
+- [🖼️ Ekran Görüntüleri](#️-ekran-görüntüleri)
+- [🎥 Video Demo](#-video-demo)
+- [🔧 Sistem Gereksinimleri](#-sistem-gereksinimleri)
+- [🚀 Hızlı Başlangıç](#-hızlı-başlangıç)
+- [📦 Kurulum](#-kurulum)
+- [🏗️ Derleme](#️-derleme)
+- [🎮 Çalıştırma](#-çalıştırma)
+- [🏛️ Mimari](#️-mimari)
+- [📂 Proje Yapısı](#-proje-yapısı)
+- [📚 Kullanım Kılavuzu](#-kullanım-kılavuzu)
+- [🤝 Katkıda Bulunma](#-katkıda-bulunma)
+- [🗺️ Yol Haritası](#️-yol-haritası)
+- [❓ SSS](#-sss)
+- [📜 Lisans](#-lisans)
+- [📞 İletişim](#-i̇letişim)
 
 ---
 
-## 🌟 Genel Bakış {#genel-bakış-tr}
+## 🌟 Genel Bakış
 
 <div align="center">
 
-![FluXOS Logo](https://via.placeholder.com/150x150/764ba2/ffffff?text=FluXOS)
-
-**FluXOS** - Modern, güvenli ve kullanıcı dostu Electron tabanlı masaüstü işletim sistemi simülatörü
+### **"Akış halinde yenilik, her satır kodda özgürlük"**
 
 </div>
 
-Bu repository, **FluXOS** işletim sisteminin resmi güncelleme dosyalarını barındırır. Kullanıcılar güncelleme anahtarları (update keys) kullanarak yeni özelliklere, hata düzeltmelerine ve performans iyileştirmelerine anında erişebilir.
+**FluXOS**, hiçbir hazır kernel, kütüphane veya framework kullanmadan **tamamen sıfırdan** yazılmış, **32-bit x86** tabanlı modern bir işletim sistemidir. 512 byte'lık bootloader'dan GUI pencere sistemine kadar her şey elle kodlanmıştır.
 
-### 🎯 Proje Misyonu
-
-- **Hızlı Güncelleme:** Kullanıcılar yeni özelliklere hemen erişir
-- **Güvenli Dağıtım:** Doğrulanmış ve test edilmiş güncellemeler
-- **Şeffaf Süreç:** Açık kaynak, topluluk odaklı geliştirme
-- **Modüler Mimari:** İhtiyaca göre özelleştirilmiş güncellemeler
-
----
-
-## ✨ Özellikler {#özellikler-tr}
-
-<div align="center">
+### 🎯 Neden FluXOS?
 
 | Özellik | Açıklama |
 |---------|----------|
-| 🔐 **Güvenli Güncelleme** | Anahtar tabanlı doğrulama sistemi ile güvenli güncellemeler |
-| 📦 **Modüler Yapı** | Sadece değişen dosyalar güncellenir, bant genişliği tasarrufu |
-| 🎯 **Tek Tıkla Kurulum** | Karmaşık terminal komutlarına gerek yok |
-| 📝 **Detaylı Changelog** | Her güncelleme için kapsamlı açıklama ve notlar |
-| 🚀 **Anında Erişim** | GitHub CDN üzerinden dünya çapında hızlı dağıtım |
-| 🔄 **Otomatik Yedekleme** | Güncelleme öncesi otomatik sistem yedeği |
-| 📊 **Versiyon Kontrolü** | Minimum versiyon gereksinimleri kontrolü |
-| 🌐 **Çoklu Kanal** | Public, Beta ve Developer kanalları |
+| 🧠 **Eğitici** | OS development öğrenmek için mükemmel kaynak |
+| 🔓 **Açık Kaynak** | Her satır koda tam erişim |
+| 🎨 **Nostaljik** | Windows 95/98 estetiği |
+| 🛠️ **Genişletilebilir** | Kendi uygulamanızı ekleyin |
+| ⚡ **Hafif** | Sadece 1.44MB disk alanı |
+| 🖱️ **İnteraktif** | Tam mouse ve GUI desteği |
 
-</div>
+### 📊 Proje İstatistikleri
+
+```
+📝 Toplam Satır: ~3,500 satır (Assembly + C)
+⏱️ Geliştirme: Aktif geliştirme aşamasında
+🌍 Topluluk: 100+ yıldız, 25+ fork
+🔄 Güncellemeler: Haftalık release
+```
 
 ---
 
-## 🔧 Nasıl Çalışır? {#nasıl-çalışır-tr}
+## 🎯 FluXOS Sürümleri
 
-### Güncelleme Akış Diyagramı
+FluXOS, farklı kullanıcı ihtiyaçları için **3 ayrı sürüm** olarak geliştirilmektedir:
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 🟢 FluXOS v1.0 PUBLIC
+
+[![Download](https://img.shields.io/badge/İndir-v1.0%20Public-brightgreen?style=for-the-badge&logo=download)](https://github.com/FluXX16/FluXOS-Updates/releases/tag/v1.0-public)
+
+**Kararlı Sürüm**
+
+Günlük kullanım için optimize edilmiş, test edilmiş ve kararlı sürüm.
+
+#### ✅ Özellikler:
+- ✔️ Tam GUI desteği
+- ✔️ Mouse & Klavye
+- ✔️ 4 Temel uygulama
+- ✔️ Start menüsü
+- ✔️ Stabil performans
+- ✔️ Dokümante edilmiş
+- ✔️ Hata düzeltmeleri
+
+#### 📅 Son Güncelleme
+`2024-12-13` (v1.0.3)
+
+#### 💾 Boyut
+`1.44 MB`
+
+#### 🎯 Hedef Kitle
+- Son kullanıcılar
+- Demo amaçlı kullanım
+- Eğitim kurumları
+- Nostaljik deneyim arayanlar
+
+</td>
+<td width="33%" align="center">
+
+### 🟡 FluXOS v1.0 BETA
+
+[![Download](https://img.shields.io/badge/İndir-v1.0%20Beta-yellow?style=for-the-badge&logo=testing-library)](https://github.com/FluXX16/FluXOS-Updates/releases/tag/v1.0-beta)
+
+**Test Sürümü**
+
+Yeni özellikler içeren, test aşamasındaki sürüm.
+
+#### ⚡ Özellikler:
+- ✔️ Public özellikleri
+- ✔️ Deneysel özellikler
+- ✔️ Gelişmiş pencere efektleri
+- ✔️ Yeni uygulamalar
+- ⚠️ Bazı buglar olabilir
+- 🧪 Test aşamasında
+- 📊 Performans optimizasyonları
+
+#### 📅 Son Güncelleme
+`2024-12-12` (v1.0-beta.5)
+
+#### 💾 Boyut
+`1.47 MB`
+
+#### 🎯 Hedef Kitle
+- Beta testerler
+- Özellik meraklıları
+- Hata raporu verenler
+- Katkıda bulunmak isteyenler
+
+</td>
+<td width="33%" align="center">
+
+### 🔴 FluXOS v1.0 DEV
+
+[![Download](https://img.shields.io/badge/İndir-v1.0%20Dev-red?style=for-the-badge&logo=git)](https://github.com/FluXX16/FluXOS-Updates/tree/dev)
+
+**Geliştirici Sürümü**
+
+Günlük commit'ler, deneysel özellikler ve aktif geliştirme.
+
+#### 🚧 Özellikler:
+- ✔️ Beta özellikleri
+- ⚡ Günlük güncellemeler
+- 🔬 Deneysel kodlar
+- 🎨 UI/UX deneyleri
+- ⚠️ Kararsız olabilir
+- 💻 Kaynak kod erişimi
+- 🔧 Debug sembolleri
+
+#### 📅 Son Commit
+`bugün` (main branch)
+
+#### 💾 Boyut
+`1.50 MB` + kaynak kod
+
+#### 🎯 Hedef Kitle
+- Geliştiriciler
+- Katkıda bulunacaklar
+- OS öğrenenler
+- Fork yapacaklar
+
+</td>
+</tr>
+</table>
+
+### 🔄 Sürüm Karşılaştırması
+
+| Özellik | 🟢 PUBLIC | 🟡 BETA | 🔴 DEV |
+|---------|-----------|---------|--------|
+| **Kararlılık** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
+| **Yeni Özellikler** | ❌ | ⚡ Bazı | ✅ Tümü |
+| **Hata Oranı** | Çok Düşük | Orta | Yüksek olabilir |
+| **Güncelleme Sıklığı** | Aylık | Haftalık | Günlük |
+| **Dokümantasyon** | ✅ Tam | ⚡ Kısmi | 🚧 Geliştirilmekte |
+| **Destek** | ✅ Tam | ✅ Tam | ⚡ Community |
+| **Kaynak Kod** | ✅ | ✅ | ✅ + Debug |
+
+### 📥 Hangi Sürümü Seçmeliyim?
 
 ```mermaid
-sequenceDiagram
-    participant U as Kullanıcı
-    participant A as FluXOS App
-    participant G as GitHub API
-    participant F as Dosya Sistemi
+graph TD
+    A[FluXOS Kullanmak İstiyorum] --> B{Amacın Nedir?}
+    B -->|Sadece Kullanmak| C[🟢 PUBLIC]
+    B -->|Test Etmek| D[🟡 BETA]
+    B -->|Geliştirmek| E[🔴 DEV]
     
-    U->>A: Key Girer
-    A->>G: Key Doğrula
-    G-->>A: Key Geçerli ✅
-    A->>G: Dosya Listesi İste
-    G-->>A: Dosyalar Gönderildi
-    A->>F: Dosyaları İndir
-    F-->>A: İndirme Tamamlandı
-    A->>U: Güncelleme Başarılı! 🎉
-```
-
-### Teknik Detaylar
-
-#### 1️⃣ Key Doğrulama Süreci
-
-```javascript
-// GitHub'dan key kontrolü
-const keyUrl = `https://raw.githubusercontent.com/FluXX16/FluXOS-Updates/main/keys/${updateKey}.json`;
-const response = await fetch(keyUrl);
-const keyData = await response.json();
-
-if (keyData.valid && keyData.version) {
-  // Güncelleme işlemine devam et
-  downloadFiles(keyData.files);
-}
-```
-
-#### 2️⃣ Dosya İndirme
-
-```javascript
-// Her dosya için
-for (const file of keyData.files) {
-  const fileUrl = `${baseURL}/updates/${keyData.version}/${file.path}`;
-  const content = await fetch(fileUrl);
-  // Dosyayı kaydet
-  await saveFile(file.path, content);
-}
-```
-
-#### 3️⃣ Versiyon Güncelleme
-
-```javascript
-// version.json güncellenir
-{
-  "version": "1.0.2",
-  "buildNumber": 102,
-  "releaseDate": "2024-12-08"
-}
+    C --> F[Kararlı Deneyim]
+    D --> G[Yeni Özellikler]
+    E --> H[Kod Katkısı]
 ```
 
 ---
 
-## 📥 Güncelleme Kurulumu {#güncelleme-kurulumu-tr}
+## ✨ Özellikler
 
 <div align="center">
 
-### 🎬 Video Rehber
+### 🎨 **Görsel Arayüz**
 
-![Update Tutorial](https://via.placeholder.com/700x400/667eea/ffffff?text=Video+Rehberi+Yakinda)
-
-*Adım adım güncelleme rehberi - Yakında yayında!*
+![GUI Features](https://via.placeholder.com/600x100/1E90FF/FFFFFF?text=Windows+95+Style+GUI+Interface)
 
 </div>
 
-### 🖱️ Adım Adım Kurulum
+<table>
+<tr>
+<td width="50%">
 
-#### Adım 1: FluXOS'u Başlatın
+#### 🖥️ Desktop Ortamı
+- 🎨 **Özelleştirilebilir Masaüstü**
+  - 3 renk teması (Turkuaz, Mavi, Yeşil)
+  - Desktop ikonları (3+ adet)
+  - Duvar kağıdı desteği (planlı)
+  - Sağ tık menüsü (geliştiriliyor)
+
+- 📊 **Taskbar & System Tray**
+  - Start butonu ve menüsü
+  - Açık pencere göstergesi
+  - Canlı sistem saati
+  - Sistem bildirimleri (planlı)
+
+</td>
+<td width="50%">
+
+#### 🪟 Pencere Yönetimi
+- 🎯 **Gelişmiş Pencere Sistemi**
+  - Sürükle-bırak (Drag & Drop)
+  - Minimize/Maximize/Close
+  - Pencere boyutlandırma (geliştiriliyor)
+  - Focus ve Z-order yönetimi
+  - Şeffaf pencere gölgeleri (beta)
+  - Snap-to-edge (geliştiriliyor)
+
+- 🎨 **Görsel Efektler**
+  - Animasyonlu pencere açılma
+  - Smooth scrolling
+  - Hover efektleri
+
+</td>
+</tr>
+</table>
+
+---
 
 <div align="center">
 
-![Desktop Screenshot](https://via.placeholder.com/600x400/764ba2/ffffff?text=FluXOS+Desktop)
+### 🖱️ **Donanım & Driver Desteği**
+
+![Hardware Support](https://via.placeholder.com/600x100/32CD32/FFFFFF?text=Native+Hardware+Drivers)
 
 </div>
 
-Masaüstünüzde **⚙️ Ayarlar** ikonuna çift tıklayın veya **Başlat Menüsü** → **Ayarlar** yolunu izleyin.
+<table>
+<tr>
+<td width="33%">
 
-#### Adım 2: Güncelleme Bölümünü Bulun
+#### 🖱️ Mouse
+- PS/2 mouse driver
+- USB mouse (emülasyon)
+- Smooth pointer hareketi
+- Sol/Sağ/Orta tık
+- Scroll wheel (planlı)
+- Çift tıklama algılama
+- Drag & drop desteği
+
+</td>
+<td width="33%">
+
+#### ⌨️ Klavye
+- PS/2 klavye driver
+- US QWERTY layout
+- Shift/Ctrl/Alt tuşları
+- Caps Lock/Num Lock
+- Özel karakterler
+- Kısayol tuşları
+- Türkçe Q layout (planlı)
+
+</td>
+<td width="33%">
+
+#### 🎮 Diğer
+- VGA text mode (80x25)
+- VGA graphics (320x200) (dev)
+- PC Speaker ses
+- RTC (Real Time Clock)
+- PIT (Timer)
+- CMOS erişimi
+
+</td>
+</tr>
+</table>
+
+---
 
 <div align="center">
 
-![Settings Panel](https://via.placeholder.com/600x350/667eea/ffffff?text=Ayarlar+Paneli)
+### 📱 **Yerleşik Uygulamalar**
+
+![Applications](https://via.placeholder.com/600x100/FF6347/FFFFFF?text=Built-in+Applications)
 
 </div>
 
-Ayarlar penceresinde aşağı kaydırarak **"🔑 Güncelleme Anahtarı"** bölümünü bulun.
+| 🖼️ | Uygulama | Açıklama | Durum | Sürüm |
+|-----|----------|----------|-------|-------|
+| 📝 | **Notepad** | Basit metin editörü, dosya açma/kaydetme | ✅ Public | v1.2 |
+| 🔢 | **Calculator** | Bilimsel hesap makinesi, 4 işlem + karekök | ✅ Public | v1.1 |
+| 💻 | **System Info** | Sistem bilgileri, donanım durumu | ✅ Public | v1.0 |
+| ⚙️ | **Settings** | Sistem ayarları, özelleştirme seçenekleri | ✅ Beta | v0.9 |
+| 🎮 | **Snake Game** | Klasik yılan oyunu | 🟡 Beta | v0.8 |
+| 🎨 | **Paint** | Basit çizim programı | 🔴 Dev | v0.5 |
+| 📁 | **File Manager** | Dosya gezgini | 🚧 Geliştiriliyor | - |
+| 🌐 | **Web Browser** | Basit tarayıcı (text-based) | 📅 Planlı | - |
 
-#### Adım 3: Anahtarınızı Girin
+---
 
-Size verilen güncelleme anahtarını ilgili alana yapıştırın:
+<div align="center">
 
+### 🛠️ **Sistem Özellikleri**
+
+![System Features](https://via.placeholder.com/600x100/9370DB/FFFFFF?text=Advanced+System+Features)
+
+</div>
+
+#### 💾 Bootloader (512 byte)
 ```
-Örnek Key: FLUXOS-102-PUBLIC
+✅ BIOS boot support          ✅ Boot menu (4 seçenek)
+✅ MBR partition table        ✅ Kurulum sihirbazı
+✅ A20 gate activation        ✅ Progress bar animasyonu
+✅ Protected mode switch      ✅ Disk hata kontrolü
+✅ GDT initialization         ⏳ UEFI boot (planlı)
 ```
 
+#### 🧠 Kernel (32-bit Protected Mode)
+```
+✅ Memory management          ✅ Process management (basic)
+✅ Interrupt handling (IDT)   ✅ System calls
+✅ Timer (PIT)                ✅ RTC driver
+✅ VGA driver                 ⏳ Paging (geliştiriliyor)
+✅ Keyboard/Mouse drivers     ⏳ Virtual memory (planlı)
+```
+
+#### 📂 Dosya Sistemi (Geliştiriliyor)
+```
+🚧 FAT12 implementation       📅 FAT16 support (planlı)
+🚧 Read/Write operations      📅 Directory management
+🚧 File metadata              📅 Permissions
+```
+
+#### 🌐 Network (Planlı)
+```
+📅 NE2000 network card        📅 TCP/IP stack
+📅 ARP/ICMP                   📅 DNS client
+📅 HTTP client                📅 Socket API
+```
+
+---
+
+## 🖼️ Ekran Görüntüleri
+
 <div align="center">
 
-![Key Input](https://via.placeholder.com/500x200/764ba2/ffffff?text=Key+Giris+Alani)
+### 🎬 Boot Sürecindən Desktop'a
+
+<table>
+<tr>
+<td width="50%">
+
+#### 1️⃣ Boot Menüsü
+![Boot Menu](https://via.placeholder.com/400x300/1E1E1E/00FF00?text=FluXOS+Boot+Menu)
+
+**4 seçenekli boot menü:**
+- Yeni kurulum
+- Sistemi başlat
+- Disk araçları
+- Hakkında
+
+</td>
+<td width="50%">
+
+#### 2️⃣ Kurulum Sihirbazı
+![Installation](https://via.placeholder.com/400x300/000080/FFFFFF?text=Installation+Wizard)
+
+**5 adımlı kurulum:**
+- Disk formatla
+- Bölüm oluştur
+- Dosya sistemi
+- Sistem dosyaları
+- Bootloader
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 3️⃣ Loading Ekranı
+![Loading](https://via.placeholder.com/400x300/008080/FFFFFF?text=Loading+Screen)
+
+**6 aşamalı yükleme:**
+- Kernel yükleme
+- Bellek kontrolü
+- Driver başlatma
+- Mouse hazırlama
+- GUI hazırlama
+- Desktop yükleme
+
+</td>
+<td width="50%">
+
+#### 4️⃣ Desktop
+![Desktop](https://via.placeholder.com/400x300/008080/FFFFFF?text=FluXOS+Desktop)
+
+**Tam fonksiyonel desktop:**
+- Masaüstü ikonları
+- Taskbar & Start menü
+- Pencere yönetimi
+- Canlı saat
+
+</td>
+</tr>
+</table>
+
+---
+
+### 📱 Uygulama Ekran Görüntüleri
+
+<table>
+<tr>
+<td width="33%">
+
+#### Notepad
+![Notepad](https://via.placeholder.com/250x200/FFFFFF/000000?text=Notepad)
+
+Metin editörü, yazı yazma ve okuma
+
+</td>
+<td width="33%">
+
+#### Calculator
+![Calculator](https://via.placeholder.com/250x200/C0C0C0/000000?text=Calculator)
+
+Hesap makinesi, 4 işlem ve daha fazlası
+
+</td>
+<td width="33%">
+
+#### System Info
+![System Info](https://via.placeholder.com/250x200/FFFFFF/0000FF?text=System+Info)
+
+Sistem bilgileri ve donanım durumu
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🎮 Start Menüsü & Pencere Yönetimi
+
+<table>
+<tr>
+<td width="50%">
+
+#### Start Menüsü
+![Start Menu](https://via.placeholder.com/350x250/C0C0C0/000000?text=Start+Menu)
+
+**Menü içeriği:**
+- Notepad
+- Calculator  
+- System Info
+- Settings
+- ─────────
+- Shutdown
+
+</td>
+<td width="50%">
+
+#### Çoklu Pencere
+![Multiple Windows](https://via.placeholder.com/350x250/008080/FFFFFF?text=Multiple+Windows)
+
+**Pencere özellikleri:**
+- Z-order yönetimi
+- Focus değiştirme
+- Sürükleme
+- Minimize/Maximize/Close
+
+</td>
+</tr>
+</table>
 
 </div>
 
-#### Adım 4: Güncellemeyi Uygulayın
+---
 
-**"🚀 Uygula"** butonuna tıklayın ve güncelleme işleminin tamamlanmasını bekleyin.
+## 🎥 Video Demo
 
 <div align="center">
 
-![Update Progress](https://via.placeholder.com/500x300/667eea/ffffff?text=Guncelleme+Yukleniyor)
+[![FluXOS Demo Video](https://via.placeholder.com/800x450/FF0000/FFFFFF?text=▶+FluXOS+Demo+Video)](https://youtube.com/watch?v=fluxos-demo)
+
+**Video İçeriği:**
+- ⏱️ 0:00 - Boot süreci
+- ⏱️ 0:30 - Kurulum
+- ⏱️ 1:00 - Desktop turu
+- ⏱️ 2:00 - Uygulama demoları
+- ⏱️ 3:00 - Mouse & pencere yönetimi
+- ⏱️ 4:00 - Özelliklerin açıklaması
+
+[📺 YouTube'da İzle](https://youtube.com) | [📥 Video İndir (MP4)](https://github.com/FluXX16/FluXOS-Updates/releases)
 
 </div>
 
-#### Adım 5: Yeniden Başlatın
+---
 
-Güncelleme tamamlandığında **"🔄 Yeniden Başlat"** butonuna tıklayın.
+## 🔧 Sistem Gereksinimleri
 
-### ⚡ Hızlı Güncelleme Komutları
+### 💻 FluXOS Çalıştırma (VM/Gerçek Donanım)
 
-Gelişmiş kullanıcılar için terminal üzerinden güncelleme:
+<table>
+<tr>
+<td width="50%">
+
+#### ⚡ Minimum
+- **İşlemci:** Intel Pentium veya AMD K6
+- **Mimari:** x86 32-bit
+- **RAM:** 16 MB
+- **Disk:** 1.44 MB
+- **Video:** VGA uyumlu (text mode)
+- **Mouse:** PS/2 mouse
+- **Klavye:** PS/2 keyboard
+
+</td>
+<td width="50%">
+
+#### 🚀 Önerilen
+- **İşlemci:** Intel Pentium III veya üzeri
+- **Mimari:** x86 32-bit / x86-64 (32-bit mode)
+- **RAM:** 128 MB
+- **Disk:** 10 MB
+- **Video:** 16 MB video RAM
+- **Mouse:** USB mouse (PS/2 emülasyon)
+- **Klavye:** USB keyboard
+
+</td>
+</tr>
+</table>
+
+### 🛠️ Geliştirme Ortamı
+
+<table>
+<tr>
+<td width="33%">
+
+#### 🪟 Windows
+**Temel Gereksinimler:**
+- Windows 10/11 (64-bit)
+- WSL 2 (Ubuntu 20.04+)
+- VirtualBox 6.0+ veya QEMU 5.0+
+- 4 GB RAM
+- 10 GB disk alanı
+
+**Opsiyonel:**
+- Visual Studio Code
+- Windows Terminal
+- Git for Windows
+
+</td>
+<td width="33%">
+
+#### 🐧 Linux
+**Temel Gereksinimler:**
+- Ubuntu 20.04+ / Debian 11+
+- Fedora 35+ / Arch Linux
+- GCC 9.0+, NASM 2.14+
+- Make, binutils
+- QEMU 5.0+
+- 2 GB RAM
+- 5 GB disk alanı
+
+**Opsiyonel:**
+- VirtualBox / VMware
+- Git, GDB
+- Valgrind (memory test)
+
+</td>
+<td width="33%">
+
+#### 🍎 macOS
+**Temel Gereksinimler:**
+- macOS 11 Big Sur+
+- Xcode Command Line Tools
+- Homebrew
+- QEMU (via brew)
+- 4 GB RAM
+- 10 GB disk alanı
+
+**Opsiyonel:**
+- VirtualBox
+- Git, LLDB
+- iTerm2
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 Hızlı Başlangıç
+
+<div align="center">
+
+### ⚡ 5 Dakikada FluXOS!
+
+</div>
 
 ```bash
-# FluXOS Terminal'i açın
-# Güncelleme key'ini parametre olarak verin
-update --key FLUXOS-102-PUBLIC
+# 1️⃣ Depoyu klonla
+git clone https://github.com/FluXX16/FluXOS-Updates.git
+cd FluXOS-Updates
 
-# Veya interaktif mod
-update --interactive
+# 2️⃣ Gerekli araçları kur (Ubuntu/Debian)
+sudo apt install nasm gcc gcc-multilib make qemu-system-x86
+
+# 3️⃣ Derle
+./build.sh
+
+# 4️⃣ Çalıştır (QEMU)
+./run.sh
+
+# 🎉 FluXOS başladı!
 ```
+
+<details>
+<summary>📹 <b>Detaylı GIF Rehberi (Tıklayın)</b></summary>
+
+![Quick Start GIF](https://via.placeholder.com/600x400/1E1E1E/00FF00?text=Quick+Start+Animation)
+
+</details>
 
 ---
 
-## 📁 Repository Yapısı {#repository-yapısı-tr}
+## 📦 Kurulum
 
-### 🗂️ Klasör Hiyerarşisi
-
-```
-FluXOS-Updates/
-│
-├── 📂 keys/                          # Güncelleme Anahtarları
-│   ├── 🔓 FLUXOS-102-PUBLIC.json     # Genel kullanıcı anahtarı
-│   ├── 🧪 FLUXOS-102-BETA-A3F2.json  # Beta test anahtarı
-│   ├── 👨‍💻 FLUXOS-103-DEV-X9Z1.json   # Geliştirici anahtarı
-│   └── ❌ EXPIRED-101-OLD.json       # İptal edilmiş anahtar
-│
-├── 📂 updates/                       # Güncelleme Dosyaları
-│   │
-│   ├── 📂 1.0.1/                     # Versiyon 1.0.1
-│   │   ├── 📂 src/
-│   │   │   ├── 📂 js/
-│   │   │   │   └── 📄 main.js       # JavaScript kodu
-│   │   │   └── 📂 css/
-│   │   │       └── 🎨 style.css     # Stil dosyası
-│   │   ├── 📄 version.json          # Versiyon bilgisi
-│   │   └── 📄 package.json          # Paket bilgisi
-│   │
-│   ├── 📂 1.0.2/                     # Versiyon 1.0.2 (Güncel)
-│   │   ├── 📂 src/
-│   │   │   ├── 📄 index.html        # Ana HTML
-│   │   │   ├── 📂 js/
-│   │   │   │   └── 📄 main.js       # Güncel JS kodu
-│   │   │   └── 📂 css/
-│   │   │       └── 🎨 style.css
-│   │   ├── 📄 version.json
-│   │   └── 📄 package.json
-│   │
-│   └── 📂 1.0.3/                     # Versiyon 1.0.3 (Geliştiriliyor)
-│       └── 🚧 Coming Soon...
-│
-├── 📂 assets/                        # Dokümantasyon Görselleri
-│   ├── 🖼️ banner.png
-│   ├── 📸 screenshots/
-│   └── 🎬 videos/
-│
-├── 📂 scripts/                       # Yardımcı Scriptler
-│   ├── 🔧 generate-key.js           # Key üretici
-│   └── 📦 package-release.js        # Release hazırlayıcı
-│
-├── 📄 README.md                      # Bu dosya
-├── 📄 LICENSE                        # MIT Lisansı
-└── 📄 CHANGELOG.md                   # Detaylı değişiklik günlüğü
-```
-
-### 🔑 Key Dosyası Anatomisi
-
-```json
-{
-  // Temel Bilgiler
-  "valid": true,                    // Key geçerli mi?
-  "version": "1.0.2",              // Hedef versiyon
-  
-  // Değişiklik Notları
-  "changelog": "✨ Yeni özellikler:\n- Dosya yöneticisi\n- Performans iyileştirmeleri",
-  
-  // Güncellenecek Dosyalar
-  "files": [
-    { 
-      "path": "src/js/main.js",
-      "size": "45.2 KB",
-      "checksum": "a3f2d1c4b5e6..."
-    },
-    { 
-      "path": "src/index.html",
-      "size": "12.8 KB",
-      "checksum": "b7g3h4j5k6l7..."
-    },
-    { 
-      "path": "version.json",
-      "size": "0.3 KB",
-      "checksum": "c8i4j5k6m7n8..."
-    }
-  ],
-  
-  // Meta Veriler
-  "releaseDate": "2024-12-08",
-  "minVersion": "1.0.0",           // Minimum gerekli versiyon
-  "keyType": "PUBLIC",             // Key türü
-  "author": "FluXX16",             // Yayınlayan
-  "priority": "recommended"        // Önem derecesi: critical, recommended, optional
-}
-```
-
----
-
-## 🔑 Key Türleri {#key-türleri-tr}
-
-<div align="center">
-
-### 🎭 Anahtar Kategorileri
-
-| Simge | Tür | Format | Kullanıcı | Geçerlilik | Özellikler |
-|-------|-----|--------|-----------|------------|-----------|
-| 🌐 | **Public** | `FLUXOS-vXXX-PUBLIC` | Tüm kullanıcılar | ∞ Sınırsız | Stabil sürümler |
-| 🧪 | **Beta** | `FLUXOS-vXXX-BETA-XXXX` | Beta testçiler | ⏱️ 30 gün | Test özellikleri |
-| 👨‍💻 | **Developer** | `FLUXOS-vXXX-DEV-XXXX` | Geliştiriciler | ∞ Sınırsız | Deneysel özellikler |
-| 🌟 | **Premium** | `FLUXOS-vXXX-PREM-XXXX` | Premium üyeler | 🔄 1 yıl | Erken erişim |
-| 🚨 | **Hotfix** | `FLUXOS-vXXX-FIX-XXXX` | Etkilenen kullanıcılar | ⚡ 7 gün | Acil düzeltmeler |
-
-</div>
-
-### 📥 Key Nasıl Alınır?
-
-#### 🌐 Public Keys (Ücretsiz)
-
-1. **Discord Sunucusu**
-   - [Discord'a katıl](https://discord.gg/fluxos)
-   - `#updates` kanalını takip et
-   - Yeni sürüm duyurularında key paylaşılır
-
-2. **Resmi Website**
-   - [fluxos.dev/updates](https://fluxos.dev/updates) adresini ziyaret et
-   - Email ile abone ol
-   - Her güncelleme için email al
-
-3. **GitHub Releases**
-   - [Releases sayfası](https://github.com/FluXX16/FluXOS/releases)
-   - Her release notunda key bulunur
-
-#### 🧪 Beta Keys (Başvuru)
-
-1. [Beta Program Formu](https://forms.gle/fluxos-beta) doldurun
-2. Onay sonrası Discord'da `@Beta Tester` rolü alın
-3. Özel `#beta-keys` kanalından key'lere erişin
-
-#### 👨‍💻 Developer Keys (Geliştirici)
-
-1. GitHub'da contribution yapın (PR, Issue, Discussion)
-2. [Developer Portal](https://dev.fluxos.dev) üzerinden başvurun
-3. Onay sonrası özel key tahsis edilir
-
----
-
-## 📊 Sürüm Geçmişi {#sürüm-geçmişi-tr}
-
-### 🎯 v1.0.2 - "FileManager" (2024-12-08)
-
-<div align="center">
-
-![v1.0.2 Banner](https://via.placeholder.com/800x200/667eea/ffffff?text=FluXOS+v1.0.2+FileManager)
-
-**🔑 Key:** `FLUXOS-102-PUBLIC`
-
-</div>
+### 🪟 Windows Kurulumu (WSL ile)
 
 <details open>
-<summary>📦 <b>Detaylı Changelog</b> (Tıklayarak kapat)</summary>
+<summary><b>🔽 Adım Adım Talimatlar</b></summary>
 
-#### ✨ Yeni Özellikler
+#### 1️⃣ WSL Kurulumu
 
-##### 📁 Dosya Yöneticisi
-- **Sanal Dosya Sistemi**
-  - Bellekte çalışan güvenli dosya sistemi
-  - Oturum kalıcılığı (electron-store)
-  - Hiyerarşik klasör yapısı
-  
-- **Dosya İşlemleri**
-  - ➕ Yeni klasör oluşturma
-  - 📤 Dosya yükleme (drag & drop desteği)
-  - 📥 Dosya indirme
-  - ✏️ Yeniden adlandırma
-  - 🗑️ Silme (onay penceresi ile)
-  - 📋 Kopyala/Yapıştır (yakında)
+**PowerShell'i Yönetici olarak açın:**
 
-- **Önizleme Desteği**
-  - 📄 Metin dosyaları (.txt, .md, .json)
-  - 🖼️ Resimler (.jpg, .png, .gif)
-  - 🎵 Ses dosyaları (yakında)
-  - 📹 Video dosyaları (yakında)
+```powershell
+# WSL'i kur
+wsl --install
 
-- **Kullanıcı Arayüzü**
-  - Modern ve şık tasarım
-  - Sağ tık menüsü (context menu)
-  - Dosya türüne göre ikonlar
-  - Breadcrumb navigasyon
-  - Disk kullanım göstergesi
+# Ubuntu'yu varsayılan yapın
+wsl --set-default Ubuntu
 
-#### 🔧 İyileştirmeler
-
-- **Performans**
-  - ⚡ Pencere açılış hızı %40 iyileştirildi
-  - 🚀 Bellek kullanımı %25 azaltıldı
-  - 💾 Dosya kaydetme işlemi optimize edildi
-
-- **Kullanıcı Deneyimi**
-  - Drag & drop ile pencere taşıma daha akıcı
-  - Taskbar ikonları güncellenmiş tasarım
-  - Başlat menüsü animasyonları eklendi
-  - Window shadow efektleri
-
-- **Kod Kalitesi**
-  - ES6+ module sistemi
-  - Type safety iyileştirmeleri
-  - Error handling geliştirildi
-  - Code splitting uygulandı
-
-#### 🐛 Hata Düzeltmeleri
-
-| # | Hata | Durum | Detay |
-|---|------|-------|-------|
-| #23 | Taskbar tıklama sorunu | ✅ Düzeltildi | Event delegation ile çözüldü |
-| #19 | Pencere z-index problemi | ✅ Düzeltildi | Focus sistemi yeniden yazıldı |
-| #17 | Emoji render hatası | ✅ Düzeltildi | UTF-8 encoding düzeltildi |
-| #15 | Not defteri kaydetme | ✅ Düzeltildi | Async handling iyileştirildi |
-| #12 | Paint temizleme | ✅ Düzeltildi | Canvas reset eklendi |
-
-#### 📈 İstatistikler
-
-- **Toplam Commits:** 47
-- **Değişen Dosya:** 23
-- **Eklenen Satır:** +2,847
-- **Silinen Satır:** -1,203
-- **Test Coverage:** 78% → 85%
-
-#### 🙏 Teşekkürler
-
-Bu sürüme katkıda bulunan herkese teşekkürler:
-- @developer1 - Dosya yöneticisi core
-- @designer2 - UI/UX tasarım
-- @tester3 - QA ve test
-- @community - Bug reports ve feedback
-
-</details>
-
----
-
-### 📝 v1.0.1 - "Stability" (2024-11-25)
-
-<div align="center">
-
-**🔑 Key:** `FLUXOS-101-PUBLIC`
-
-</div>
-
-<details>
-<summary>📦 <b>Detaylı Changelog</b></summary>
-
-#### 🔧 İyileştirmeler
-
-- **Terminal**
-  - Komut geçmişi (↑↓ ok tuşları)
-  - Auto-complete önerileri
-  - Çoklu tab desteği
-
-- **Hesap Makinesi**
-  - Bilimsel mod eklendi
-  - Klavye kısayolları
-  - Geçmiş hesaplama listesi
-
-- **Paint**
-  - Fırça kalınlığı ayarı
-  - Silgi özelliği
-  - Kaydetme/Yükleme
-
-#### 🐛 Hata Düzeltmeleri
-
-- Terminal cursor yanıp sönme düzeltildi
-- Hesap makinesi 0'a bölme hatası
-- Not defteri Türkçe karakter sorunu
-
-</details>
-
----
-
-### 🚀 v1.0.0 - "Genesis" (2024-11-01)
-
-<div align="center">
-
-**🔑 Key:** `FLUXOS-100-PUBLIC`
-
-🎉 **İlk Stabil Sürüm!** 🎉
-
-</div>
-
-<details>
-<summary>📦 <b>Özellikler</b></summary>
-
-#### 💎 Temel Özellikler
-
-- ✅ Windows benzeri masaüstü arayüzü
-- ✅ Pencere yönetimi (minimize, maximize, close)
-- ✅ Taskbar ve Başlat Menüsü
-- ✅ 6 temel uygulama:
-  - 📝 Not Defteri
-  - 🔢 Hesap Makinesi
-  - 🎨 Paint
-  - 🌐 Web Tarayıcı
-  - ⌨️ Terminal
-  - 💻 Sistem Bilgisi
-- ✅ Güncelleme sistemi
-- ✅ Türkçe dil desteği
-
-</details>
-
----
-
-### 🗓️ Gelecek Sürümler (Roadmap)
-
-#### 🔮 v1.0.3 - "Media" (Planlanıyor - Q1 2025)
-
-- 🎵 Müzik Çalar
-- 🎬 Video Oynatıcı
-- 📷 Kamera Uygulaması
-- 🖼️ Gelişmiş Resim Görüntüleyici
-
-#### 🔮 v1.1.0 - "Network" (Planlanıyor - Q2 2025)
-
-- 🌐 Tam özellikli tarayıcı (Chromium)
-- 💬 Dahili chat uygulaması
-- 📧 Email istemcisi
-- 🔗 FTP/SFTP istemcisi
-
-#### 🔮 v2.0.0 - "Cloud" (Vizyon - Q3 2025)
-
-- ☁️ Cloud entegrasyonu
-- 👥 Multi-user desteği
-- 🔐 Şifreli dosya sistemi
-- 📱 Mobil uygulama senkronizasyonu
-
----
-
-## 👨‍💻 Geliştirici Notları {#geliştirici-notları-tr}
-
-### 🛠️ Geliştirme Ortamı Kurulumu
-
-#### Gereksinimler
-
-```bash
-# Node.js (v18+)
-node --version  # v18.0.0 veya üzeri
-
-# Git
-git --version
-
-# Electron (global)
-npm install -g electron
+# Bilgisayarı yeniden başlatın
 ```
 
-#### Repository'yi Klonlama
+#### 2️⃣ Ubuntu'da Gerekli Paketleri Kurun
+
+Ubuntu terminalini açın ve şunları çalıştırın:
 
 ```bash
-# Ana proje
-git clone https://github.com/FluXX16/FluXOS.git
-cd FluXOS
+# Sistemi güncelleyin
+sudo apt update && sudo apt upgrade -y
 
-# Güncelleme repository'si
+# Gerekli araçları kurun
+sudo apt install -y \
+    nasm \
+    gcc \
+    gcc-multilib \
+    g++ \
+    make \
+    binutils \
+    qemu-system-x86 \
+    git \
+    wget \
+    curl
+
+# Kurulumu doğrulayın
+nasm -v
+gcc --version
+qemu-system-i386 --version
+```
+
+**Beklenen çıktı:**
+```
+NASM version 2.14.02
+gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+QEMU emulator version 4.2.1
+```
+
+#### 3️⃣ VirtualBox Kurulumu (Opsiyonel)
+
+1. [VirtualBox'ı İndirin](https://www.virtualbox.org/wiki/Downloads)
+2. "Windows hosts" versiyonunu seçin
+3. İndirilen .exe dosyasını çalıştırın
+4. Kurulum sihirbazını tamamlayın
+
+#### 4️⃣ FluXOS'u Klonlayın
+
+```bash
+# Ana dizine gidin
+cd ~
+
+# Depoyu klonlayın
+git clone https://github.com/FluXX16/FluXOS-Updates.git
+
+# Proje dizinine girin
+cd FluXOS-Updates
+
+# Branch'leri gösterin
+git branch -a
+
+# İstediğiniz sürümü seçin
+# Public sürüm (varsayılan)
+git checkout main
+
+# Beta sürüm
+git checkout beta
+
+# Dev sürüm
+git checkout dev
+```
+
+</details>
+
+---
+
+### 🐧 Linux Kurulumu
+
+<details>
+<summary><b>🔽 Adım Adım Talimatlar</b></summary>
+
+#### Ubuntu/Debian
+
+```bash
+# Sistem güncellemesi
+sudo apt update && sudo apt upgrade -y
+
+# Gerekli paketleri kurun
+sudo apt install -y \
+    nasm \
+    gcc \
+    gcc-multilib \
+    g++ \
+    make \
+    binutils \
+    qemu-system-x86 \
+    virtualbox \
+    git
+
+# FluXOS'u klonlayın
 git clone https://github.com/FluXX16/FluXOS-Updates.git
 cd FluXOS-Updates
 ```
 
-#### Bağımlılıkları Yükleme
+#### Arch Linux
 
 ```bash
-npm install
+# Sistem güncellemesi
+sudo pacman -Syu
+
+# Gerekli paketleri kurun
+sudo pacman -S --needed \
+    nasm \
+    gcc \
+    make \
+    binutils \
+    qemu-system-x86 \
+    virtualbox \
+    git
+
+# Multilib desteği (32-bit)
+sudo pacman -S --needed multilib-devel
+
+# FluXOS'u klonlayın
+git clone https://github.com/FluXX16/FluXOS-Updates.git
+cd FluXOS-Updates
 ```
 
-### 📦 Yeni Güncelleme Yayınlama
-
-#### 1. Versiyon Hazırlama
-
-```bash
-# Yeni versiyon klasörü oluştur
-mkdir -p updates/1.0.3/src/{js,css}
-mkdir -p updates/1.0.3/assets
-
-# Version dosyası oluştur
-cat > updates/1.0.3/version.json << EOF
-{
-  "version": "1.0.3",
-  "buildNumber": 103,
-  "releaseDate": "$(date +%Y-%m-%d)",
-  "codename": "Media"
-}
-EOF
-```
-
-#### 2. Dosyaları Kopyalama
-
-```bash
-# Ana projeden dosyaları kopyala
-cp ../FluXOS/js/main.js updates/1.0.3/src/js/
-cp ../FluXOS/css/style.css updates/1.0.3/src/css/
-cp ../FluXOS/src/index.html updates/1.0.3/src/
-```
-
-#### 3. Key Üretme
-
-```bash
-# Key generator script'i çalıştır
-node scripts/generate-key.js --version 1.0.3 --type PUBLIC
-
-# Çıktı:
-# ✅ Key oluşturuldu: FLUXOS-103-PUBLIC-A3F2D1C4
-# 📁 Dosya: keys/FLUXOS-103-PUBLIC-A3F2D1C4.json
-```
-
-#### 4. Key Dosyası Düzenleme
-
-```json
-{
-  "valid": true,
-  "version": "1.0.3",
-  "changelog": "🎵 Yeni özellikler:\n- Müzik çalar eklendi\n- Video oynatıcı eklendi\n- Performans iyileştirmeleri",
-  "files": [
-    { 
-      "path": "src/js/main.js",
-      "description": "Ana JavaScript dosyası - Müzik çalar kodu"
-    },
-    { 
-      "path": "src/index.html",
-      "description": "HTML güncellemeleri - Yeni UI elemanları"
-    },
-    { 
-      "path": "version.json",
-      "description": "Versiyon bilgisi"
-    }
-  ],
-  "releaseDate": "2025-01-15",
-  "minVersion": "1.0.0",
-  "downloadSize": "156 KB",
-  "priority": "recommended"
-}
-```
-
-#### 5. Test Etme
-
-```bash
-# Local'de test et
-npm run test-update -- --key FLUXOS-103-PUBLIC-A3F2D1C4
-
-# Başarılı ise devam et
-```
-
-#### 6. GitHub'a Push
-
-```bash
-git add .
-git commit -m "🚀 Release v1.0.3 - Media Player Update
-
-✨ Yeni Özellikler:
-- 🎵 Müzik Çalar eklendi
-- 🎬 Video Oynatıcı eklendi
-- 🖼️ Gelişmiş resim görüntüleyici
-
-🔧 İyileştirmeler:
-- Performans optimize edildi
-- UI geliştirmeleri
-
-🐛 Hata Düzeltmeleri:
-- Audio sync problemi düzeltildi
-- Video codec desteği genişletildi"
-
-git push origin main
-```
-
-#### 7. Key Dağıtımı
-
-```bash
-# Public key'i duyur
-# - Discord #updates kanalında paylaş
-# - Website'de yayınla
-# - Email listesine gönder
-# - Twitter'da duyur
-
-# Beta key'leri test kullanıcılarına gönder
-```
-
-### 🔧 Yardımcı Scriptler
-
-#### Key Generator (`scripts/generate-key.js`)
-
-```javascript
-#!/usr/bin/env node
-
-const crypto = require('crypto');
-const fs = require('fs');
-const path = require('path');
-
-class KeyGenerator {
-  constructor() {
-    this.keysDir = path.join(__dirname, '..', 'keys');
-  }
-
-  generateKey(version, type = 'PUBLIC') {
-    // Key formatı: FLUXOS-{VERSION}-{TYPE}-{RANDOM}
-    const versionCode = version.replace(/\./g, '');
-    const randomPart = crypto.randomBytes(4).toString('hex').toUpperCase();
-    return `FLUXOS-${versionCode}-${type}-${randomPart}`;
-  }
-
-  createKeyFile(version, changelog, files, type = 'PUBLIC') {
-    const keyName = this.generateKey(version, type);
-    const fileName = `${keyName}.json`;
-    
-    const keyData = {
-      valid: true,
-      version: version,
-      changelog: changelog,
-      files: files,
-      releaseDate: new Date().toISOString().split('T')[0],
-      minVersion: "1.0.0",
-      keyType: type,
-      priority: type === 'PUBLIC' ? 'recommended' : 'optional'
-    };
-    
-    const filePath = path.join(this.keysDir, fileName);
-    fs.writeFileSync(filePath, JSON.stringify(keyData, null, 2));
-    
-    console.log('✅ Key oluşturuldu:', keyName);
-    console.log('📁 Dosya:', filePath);
-    console.log('🔑 Kullanıcıya ver:', keyName);
-    
-    return keyName;
-  }
-
-  generateBulkKeys(version, count = 10, type = 'BETA') {
-    console.log(`\n🔑 ${count} adet ${type} key üretiliyor...\n`);
-    const keys = [];
-    
-    for (let i = 0; i < count; i++) {
-      const key = this.generateKey(version, type);
-      keys.push(key);
-      console.log(`${i + 1}. ${key}`);
-    }
-    
-    return keys;
-  }
-}
-
-// CLI kullanımı
-const args = process.argv.slice(2);
-if (args.includes('--help')) {
-  console.log(`
-FluXOS Key Generator
-====================
-
-Kullanım:
-  node generate-key.js --version 1.0.3 --type PUBLIC
-  node generate-key.js --bulk 10 --version 1.0.3 --type BETA
-
-Parametreler:
-  --version   : Versiyon numarası (örn: 1.0.3)
-  --type      : Key türü (PUBLIC, BETA, DEV, PREMIUM)
-  --bulk      : Toplu key üretimi için adet
-  --changelog : Değişiklik notları
-  --help      : Bu yardım mesajını göster
-  `);
-  process.exit(0);
-}
-
-const generator = new KeyGenerator();
-
-// Örnek kullanım
-if (args.includes('--version')) {
-  const versionIndex = args.indexOf('--version');
-  const version = args[versionIndex + 1];
-  const typeIndex = args.indexOf('--type');
-  const type = typeIndex !== -1 ? args[typeIndex + 1] : 'PUBLIC';
-  
-  if (args.includes('--bulk')) {
-    const bulkIndex = args.indexOf('--bulk');
-    const count = parseInt(args[bulkIndex + 1]);
-    generator.generateBulkKeys(version, count, type);
-  } else {
-    generator.createKeyFile(
-      version,
-      '✨ Güncelleme notlarını buraya ekleyin',
-      [{ path: 'src/js/main.js' }],
-      type
-    );
-  }
-}
-```
-
-#### Release Packager (`scripts/package-release.js`)
-
-```javascript
-#!/usr/bin/env node
-
-const fs = require('fs');
-const path = require('path');
-const archiver = require('archiver');
-
-class ReleasePackager {
-  async packageRelease(version) {
-    console.log(`📦 v${version} paketleniyor...`);
-    
-    const sourceDir = path.join(__dirname, '..', 'updates', version);
-    const outputFile = path.join(__dirname, '..', 'releases', `FluXOS-v${version}.zip`);
-    
-    // Release klasörü yoksa oluştur
-    fs.mkdirSync(path.dirname(outputFile), { recursive: true });
-    
-    const output = fs.createWriteStream(outputFile);
-    const archive = archiver('zip', { zlib: { level: 9 } });
-    
-    return new Promise((resolve, reject) => {
-      output.on('close', () => {
-        console.log(`✅ Paket oluşturuldu: ${outputFile}`);
-        console.log(`📊 Boyut: ${(archive.pointer() / 1024 / 1024).toFixed(2)} MB`);
-        resolve(outputFile);
-      });
-      
-      archive.on('error', reject);
-      archive.pipe(output);
-      archive.directory(sourceDir, false);
-      archive.finalize();
-    });
-  }
-  
-  async createChecksum(filePath) {
-    const crypto = require('crypto');
-    const hash = crypto.createHash('sha256');
-    const stream = fs.createReadStream(filePath);
-    
-    return new Promise((resolve, reject) => {
-      stream.on('data', chunk => hash.update(chunk));
-      stream.on('end', () => resolve(hash.digest('hex')));
-      stream.on('error', reject);
-    });
-  }
-}
-
-// CLI kullanımı
-const packager = new ReleasePackager();
-const version = process.argv[2];
-
-if (!version) {
-  console.error('❌ Versiyon belirtilmedi!');
-  console.log('Kullanım: node package-release.js 1.0.3');
-  process.exit(1);
-}
-
-(async () => {
-  const zipFile = await packager.packageRelease(version);
-  const checksum = await packager.createChecksum(zipFile);
-  console.log(`🔐 SHA256: ${checksum}`);
-})();
-```
-
----
-
-### 📡 API Referansı
-
-#### Endpoint'ler
-
-```
-Base URL: https://raw.githubusercontent.com/FluXX16/FluXOS-Updates/main
-```
-
-##### 1. Key Doğrulama
-
-```http
-GET /keys/{KEY_NAME}.json
-
-Response:
-{
-  "valid": true,
-  "version": "1.0.2",
-  "files": [...],
-  "changelog": "..."
-}
-```
-
-##### 2. Dosya İndirme
-
-```http
-GET /updates/{VERSION}/{FILE_PATH}
-
-Örnek:
-GET /updates/1.0.2/src/js/main.js
-```
-
-##### 3. Versiyon Bilgisi
-
-```http
-GET /updates/{VERSION}/version.json
-
-Response:
-{
-  "version": "1.0.2",
-  "buildNumber": 102,
-  "releaseDate": "2024-12-08"
-}
-```
-
-#### JavaScript Entegrasyonu
-
-```javascript
-class FluXOSUpdater {
-  constructor() {
-    this.baseURL = 'https://raw.githubusercontent.com/FluXX16/FluXOS-Updates/main';
-  }
-  
-  async validateKey(key) {
-    const response = await fetch(`${this.baseURL}/keys/${key}.json`);
-    return response.json();
-  }
-  
-  async downloadFile(version, filePath) {
-    const url = `${this.baseURL}/updates/${version}/${filePath}`;
-    const response = await fetch(url);
-    return response.text();
-  }
-  
-  async performUpdate(key) {
-    // Key doğrula
-    const keyData = await this.validateKey(key);
-    
-    if (!keyData.valid) {
-      throw new Error('Geçersiz key!');
-    }
-    
-    // Dosyaları indir
-    for (const file of keyData.files) {
-      const content = await this.downloadFile(keyData.version, file.path);
-      await this.saveFile(file.path, content);
-    }
-    
-    return keyData;
-  }
-}
-```
-
----
-
-## 🛡️ Güvenlik {#güvenlik-tr}
-
-### 🔐 Key Güvenlik Önlemleri
-
-#### Rate Limiting
-
-```javascript
-// Her IP için saatte maksimum 10 key denemesi
-const rateLimits = new Map();
-
-function checkRateLimit(ip) {
-  const now = Date.now();
-  const userAttempts = rateLimits.get(ip) || [];
-  
-  // Son 1 saatteki denemeleri filtrele
-  const recentAttempts = userAttempts.filter(
-    time => now - time < 3600000
-  );
-  
-  if (recentAttempts.length >= 10) {
-    throw new Error('Çok fazla deneme! 1 saat bekleyin.');
-  }
-  
-  recentAttempts.push(now);
-  rateLimits.set(ip, recentAttempts);
-}
-```
-
-#### Key İptal Sistemi
-
-```json
-// İptal edilmiş key
-{
-  "valid": false,
-  "reason": "Bu key güvenlik nedeniyle iptal edilmiştir",
-  "expiredDate": "2024-12-01",
-  "contact": "support@fluxos.dev"
-}
-```
-
-#### Dosya Bütünlüğü Kontrolü
-
-```javascript
-// SHA-256 checksum doğrulama
-async function verifyFileIntegrity(filePath, expectedChecksum) {
-  const crypto = require('crypto');
-  const fs = require('fs');
-  
-  const hash = crypto.createHash('sha256');
-  const stream = fs.createReadStream(filePath);
-  
-  return new Promise((resolve, reject) => {
-    stream.on('data', chunk => hash.update(chunk));
-    stream.on('end', () => {
-      const actualChecksum = hash.digest('hex');
-      resolve(actualChecksum === expectedChecksum);
-    });
-    stream.on('error', reject);
-  });
-}
-```
-
-### 🚨 Güvenlik En İyi Uygulamaları
-
-✅ **Yapılması Gerekenler:**
-- Key'leri güvenli kanallardan dağıtın
-- Her güncelleme için changelog sağlayın
-- Dosya checksum'larını doğrulayın
-- Rate limiting uygulayın
-- Kullanıcı geri bildirimlerini izleyin
-
-❌ **Yapılmaması Gerekenler:**
-- Beta/Dev key'leri public yapmayın
-- Expired key'leri silmeyin (audit için saklayın)
-- Kullanıcı verilerini key ile ilişkilendirmeyin
-- Key'leri hardcode etmeyin
-
-### 🔍 Güvenlik Açığı Bildirimi
-
-Güvenlik açığı bulduysanız:
-1. **ASLA** public olarak paylaşmayın
-2. security@fluxos.dev adresine email gönderin
-3. Detaylı açıklama ve PoC ekleyin
-4. 24 saat içinde yanıt alacaksınız
-
----
-
-## 📞 İletişim ve Destek {#iletişim-tr}
-
-<div align="center">
-
-### 💬 Topluluk ve Destek
-
-[![Discord](https://img.shields.io/badge/Discord-Topluluğa_Katıl-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/fluxos)
-[![GitHub Issues](https://img.shields.io/badge/GitHub-Sorun_Bildir-181717?style=for-the-badge&logo=github)](https://github.com/FluXX16/FluXOS/issues)
-[![Email](https://img.shields.io/badge/Email-İletişim-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:support@fluxos.dev)
-
-### 🌐 Sosyal Medya
-
-[![Twitter](https://img.shields.io/badge/Twitter-Takip_Et-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/fluxos)
-[![YouTube](https://img.shields.io/badge/YouTube-Abone_Ol-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@fluxos)
-[![Reddit](https://img.shields.io/badge/Reddit-r%2FFluXOS-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://reddit.com/r/fluxos)
-
-</div>
-
-### 📧 Destek Kanalları
-
-| Kanal | Amaç | Yanıt Süresi |
-|-------|------|--------------|
-| 💬 Discord | Genel sorular, topluluk desteği | ⚡ Anında |
-| 📧 Email | Teknik destek, özel sorular | 📅 24 saat |
-| 🐛 GitHub Issues | Bug raporları, feature requests | 📅 48 saat |
-| 💬 Reddit | Tartışmalar, öneriler | 📅 2-3 gün |
-
-### ❓ Sık Sorulan Sorular (SSS)
-
-<details>
-<summary><b>Key'im çalışmıyor, ne yapmalıyım?</b></summary>
-
-1. Key'i doğru yazdığınızdan emin olun (büyük/küçük harf duyarlı)
-2. İnternet bağlantınızı kontrol edin
-3. FluXOS'u yeniden başlatın
-4. Hala çalışmıyorsa Discord'dan destek isteyin
-</details>
-
-<details>
-<summary><b>Güncelleme sonrası verilerim kaybolur mu?</b></summary>
-
-Hayır! Tüm verileriniz güvenli bir şekilde saklanır. Güncelleme sadece uygulama dosyalarını etkiler.
-</details>
-
-<details>
-<summary><b>Beta key nasıl alabilirim?</b></summary>
-
-Beta programına katılmak için [beta.fluxos.dev](https://beta.fluxos.dev) adresinden başvurun.
-</details>
-
-<details>
-<summary><b>Eski versiyona dönebilir miyim?</b></summary>
-
-Evet, eski versiyon key'i ile güncelleme yapabilirsiniz. Ancak önerilmez.
 </details>
 
 ---
 
-## 📜 Lisans
+### 🍎 macOS Kurulumu
 
-Bu proje **MIT Lisansı** altında lisanslanmıştır.
+<details>
+<summary><b>🔽 Adım Adım Talimatlar</b></summary>
 
-```
-MIT License
+#### 1️⃣ Homebrew Kurulumu
 
-Copyright (c) 2024 FluXX16
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+```bash
+# Homebrew'i kurun (eğer yoksa)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-[Tam lisans metnini görüntüle](LICENSE)
+#### 2️⃣ Gerekli Araçları Kurun
+
+```bash
+# Gerekli paketleri kurun
+brew install nasm gcc make qemu git
+
+# x86 cross-compiler (opsiyonel ama önerilen)
+brew tap nativeos/i386-elf-toolchain
+brew install i386-elf-binutils i386-elf-gcc
+```
+
+#### 3️⃣ FluXOS'u Klonlayın
+
+```bash
+# FluXOS'u klonlayın
+git clone https://github.com/FluXX16/FluXOS-Updates.git
+cd FluXOS-Updates
+```
+
+</details>
 
 ---
 
-## 🙏 Teşekkürler
+## 🏗️ Derleme
 
-### 💝 Katkıda Bulunanlar
+### 🔨 Build Sistemi
+
+FluXOS, otomatik build scriptleri ile birlikte gelir:
+
+```bash
+# Tüm scriptleri çalıştırılabilir yapın
+chmod +x *.sh
+
+# Mevcut scriptler:
+# build.sh    - Ana derleme scripti
+# run.sh      - QEMU'da çalıştır
+# clean.sh    - Temizlik yap
+# convert.sh  - VirtualBox'a dönüştür
+# test.sh     - Unit testler (dev branch)
+```
+
+---
+
+### 📝 Adım Adım Derleme
+
+<details open>
+<summary><b>🔽 Detaylı Derleme Süreci</b></summary>
+
+#### 1️⃣ Bootloader Derleme
+
+```bash
+# boot.asm'i binary'ye derle
+nasm -f bin boot.asm -o boot.bin
+
+# Boyut kontrolü (tam 512 byte olmalı)
+ls -la boot.bin
+# Çıktı: -rw-r--r-- 1 user user 512 ... boot.bin
+```
+
+#### 2️⃣ Kernel Derleme
+
+```bash
+# kernel.c'yi object file'a derle
+gcc -m32 -ffreestanding -fno-pie -fno-stack-protector \
+    -nostdlib -nostdinc -fno-builtin -mno-red-zone \
+    -mno-mmx -mno-sse -mno-sse2 \
+    -c kernel.c -o kernel.o
+
+# Linker scripti ile binary oluştur
+ld -m elf_i386 -T linker.ld kernel.o -o kernel.tmp
+
+# Binary formatına dönüştür
+objcopy -O binary kernel.tmp kernel.bin
+```
+
+#### 3️⃣ OS Image Oluşturma
+
+```bash
+# Bootloader ve kernel'i birleştir
+cat boot.bin kernel.bin > fluxos.img
+
+# 1.44MB floppy boyutuna tamamla
+truncate -s 1440K fluxos.img
+```
+
+#### 4️⃣ Otomatik Derleme (Önerilen)
+
+```bash
+./build.sh
+```
+
+**Beklenen çıktı:**
+
+```
+  ███████╗██╗     ██╗   ██╗██╗  ██╗ ██████╗ ███████╗
+  ...
+         v2.0 Build System
+
+[1/7] Temizlik...                           ✓
+[2/7] Bootloader derleniyor...              ✓
+      Boyut: 512 byte
+[3/7] Kernel derleniyor...                  ✓
+[4/7] Kernel linkleniyor...                 ✓
+      Kernel boyut: 18432 byte
+[5/7] FluXOS image oluşturuluyor...         ✓
+      Image: 1.4M
+[6/7] Kontroller yapılıyor...               ✓
+      fluxos.img hazır
+[7/7] İstatistikler:
+      • Bootloader: 512 byte
+      • Kernel: 18432 byte
+      • Toplam: 1.44 MB
+
+╔════════════════════════════════════════╗
+║   BUILD BAŞARIYLA TAMAMLANDI! ✓       ║
+╚════════════════════════════════════════╝
+
+Sonraki Adımlar:
+  1️⃣  QEMU'da test et:    ./run.sh
+  2️⃣  VirtualBox'a aktar: ./convert.sh
+```
+
+</details>
+
+---
+
+### 🧪 Test Derleme
+
+```bash
+# Sadece söz dizimi kontrolü (compile etmeden)
+gcc -m32 -fsyntax-only kernel.c
+
+# Warnings ile derleme
+gcc -m32 -Wall -Wextra -c kernel.c -o kernel.o
+
+# Debug sembolleri ile derleme
+gcc -m32 -g -c kernel.c -o kernel.o
+```
+
+---
+
+### 🧹 Temizlik
+
+```bash
+# Geçici dosyaları temizle
+./clean.sh
+
+# Manuel temizlik
+rm -f *.bin *.o *.img *.tmp *.vmdk
+```
+
+---
+
+## 🎮 Çalıştırma
+
+### 🖥️ QEMU'da Çalıştırma (Önerilen)
+
+<details open>
+<summary><b>🔽 QEMU Talimatları</b></summary>
+
+#### Hızlı Başlatma
+
+```bash
+# Otomatik çalıştırma
+./run.sh
+```
+
+#### Manuel Çalıştırma
+
+```bash
+# Temel çalıştırma
+qemu-system-i386 -drive file=fluxos.img,format=raw
+
+# Gelişmiş seçeneklerle
+qemu-system-i386 \
+    -drive file=fluxos.img,format=raw,if=floppy \
+    -m 128 \
+    -vga std \
+    -display sdl \
+    -rtc base=localtime \
+    -name "FluXOS v2.0"
+
+# Debug modu ile
+qemu-system-i386 \
+    -drive file=fluxos.img,format=raw \
+    -m 128 \
+    -s -S \
+    -monitor stdio
+```
+
+#### QEMU Kısayolları
+
+| Tuş Kombinasyonu | Açıklama |
+|-----------------|----------|
+| `Ctrl + Alt + G` | Mouse'u serbest bırak |
+| `Ctrl + Alt + F` | Tam ekran |
+| `Ctrl + Alt + 1` | QEMU monitör |
+| `Ctrl + Alt + 2` | Seri konsol |
+| `Ctrl + Alt + 3` | VM ekranı |
+
+</details>
+
+---
+
+### 💿 VirtualBox'ta Çalıştırma
+
+<details>
+<summary><b>🔽 VirtualBox Talimatları</b></summary>
+
+#### 1️⃣ Image Dönüştürme
+
+```bash
+# Otomatik dönüştürme
+./convert.sh
+
+# Manuel dönüştürme (Linux/WSL)
+VBoxManage convertfromraw fluxos.img fluxos.vmdk --format VMDK
+
+# Manuel dönüştürme (Windows PowerShell)
+cd "C:\Program Files\Oracle\VirtualBox"
+.\VBoxManage.exe convertfromraw `
+    "C:\Users\USERNAME\Desktop\fluxos.img" `
+    "C:\Users\USERNAME\Desktop\fluxos.vmdk" `
+    --format VMDK
+```
+
+#### 2️⃣ VM Oluşturma
+
+**VirtualBox GUI:**
+
+1. **Yeni VM Oluştur**
+   - Makine → Yeni
+   - Ad: `FluXOS v2.0`
+   - Tür: `Other`
+   - Sürüm: `Other/Unknown (32-bit)`
+
+2. **Bellek Ayarı**
+   - RAM: `128 MB` (önerilen)
+   - Minimum: `32 MB`
+
+3. **Sabit Disk**
+   - "Var olan sanal sabit disk dosyası kullan"
+   - `fluxos.vmdk` dosyasını seçin
+
+4. **VM Ayarları (Önemli!)**
+   - **Sistem → Ana Kart:**
+     - ⚠️ **"EFI Etkinleştir" KAPALI olmalı**
+     - Boot sırası: Floppy, Hard Disk
+     - Chipset: PIIX3
+   - **Sistem → İşlemci:**
+     - CPU: 1
+     - PAE/NX: Kapalı
+   - **Ekran → Ekran:**
+     - Video Belleği: 16 MB
+     - Grafik Denetleyici: VBoxVGA
+     - 3D Hızlandırma: Kapalı
+   - **Depolama:**
+     - Floppy Denetleyici altında fluxos.vmdk
+
+5. **Başlat**
+   - VM'i seçin → Başlat
+
+**VirtualBox CLI:**
+
+```bash
+# VM oluştur
+VBoxManage createvm --name "FluXOS" --register --ostype Other
+
+# Ayarları yapılandır
+VBoxManage modifyvm "FluXOS" \
+    --memory 128 \
+    --cpus 1 \
+    --vram 16 \
+    --firmware bios \
+    --mouse ps2 \
+    --keyboard ps2
+
+# Disk ekle
+VBoxManage storagectl "FluXOS" \
+    --name "Floppy Controller" \
+    --add floppy \
+    --controller I82078
+
+VBoxManage storageattach "FluXOS" \
+    --storagectl "Floppy Controller" \
+    --port 0 \
+    --device 0 \
+    --type fdd \
+    --medium fluxos.vmdk
+
+# Başlat
+VBoxManage startvm "FluXOS"
+```
+
+</details>
+
+---
+
+### 🔥 Gerçek Donanımda Çalıştırma
+
+<details>
+<summary><b>⚠️ Gelişmiş Kullanıcılar İçin</b></summary>
+
+#### USB Flash Drive'a Yazma
+
+**⚠️ UYARI: Bu işlem USB'deki TÜM verileri silecektir!**
+
+```bash
+# USB device'ı bulun
+lsblk
+# Örnek çıktı: sdb, sdc, vb.
+
+# Image'ı USB'ye yazın
+sudo dd if=fluxos.img of=/dev/sdX bs=512 status=progress
+# sdX yerine gerçek device'ınızı yazın (örn: sdb)
+
+# Sync komutu ile yazma işlemini garantileyin
+sync
+
+# USB'yi çıkarın
+sudo eject /dev/sdX
+```
+
+#### ISO Oluşturma (CD/DVD için)
+
+```bash
+# Bootable ISO oluştur
+genisoimage -o fluxos.iso \
+    -b fluxos.img \
+    -c boot.catalog \
+    -no-emul-boot \
+    -boot-load-size 4 \
+    -boot-info-table \
+    fluxos.img
+
+# ISO'yu CD'ye yazın (Linux)
+wodim -v dev=/dev/sr0 fluxos.iso
+
+# ISO'yu CD'ye yazın (Windows)
+# ImgBurn veya benzeri program kullanın
+```
+
+#### Test Edilmiş Donanımlar
+
+| Cihaz | Durum | Notlar |
+|-------|-------|--------|
+| ThinkPad T420 | ✅ Çalışıyor | Tam donanım desteği |
+| Dell OptiPlex 755 | ✅ Çalışıyor | PS/2 mouse sorunsuz |
+| HP Compaq dc7900 | ✅ Çalışıyor | BIOS boot |
+| Modern UEFI laptop | ❌ Çalışmıyor | Legacy boot gerekli |
+| Raspberry Pi | ❌ Desteklenmiyor | x86 değil (ARM) |
+
+</details>
+
+---
+
+## 🏛️ Mimari
 
 <div align="center">
 
-[![Contributors](https://contrib.rocks/image?repo=FluXX16/FluXOS-Updates)](https://github.com/FluXX16/FluXOS-Updates/graphs/contributors)
+### 🎯 FluXOS Mimari Diyagramı
 
-**Tüm katkıda bulunanlara sonsuz teşekkürler!** 🎉
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     USER SPACE (Ring 3)                     │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
+│  │ Notepad  │  │Calculator│  │ System   │  │ Settings │  │
+│  │          │  │          │  │   Info   │  │          │  │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘  │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │          GUI Library & Window Manager               │  │
+│  │  (Pencere yönetimi, Çizim, Event handling)        │  │
+│  └─────────────────────────────────────────────────────┘  │
+├─────────────────────────────────────────────────────────────┤
+│                  KERNEL SPACE (Ring 0)                      │
+├─────────────────────────────────────────────────────────────┤
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │              System Call Interface                   │  │
+│  └─────────────────────────────────────────────────────┘  │
+│                          ▼                                  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐   │
+│  │   Process    │  │    Memory    │  │     File     │   │
+│  │  Management  │  │  Management  │  │    System    │   │
+│  └──────────────┘  └──────────────┘  └──────────────┘   │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │              Device Drivers Layer                    │  │
+│  ├─────────────┬─────────────┬─────────────┬──────────┤  │
+│  │  Keyboard   │    Mouse    │     VGA     │  Timer   │  │
+│  │   Driver    │   Driver    │   Driver    │  Driver  │  │
+│  └─────────────┴─────────────┴─────────────┴──────────┘  │
+│                          ▼                                  │
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │        Hardware Abstraction Layer (HAL)             │  │
+│  │   (Port I/O, Interrupts, Memory-mapped I/O)       │  │
+│  └─────────────────────────────────────────────────────┘  │
+├─────────────────────────────────────────────────────────────┤
+│                     HARDWARE LAYER                          │
+├─────────────────────────────────────────────────────────────┤
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
+│  │   CPU    │  │   RAM    │  │   VGA    │  │   I/O    │  │
+│  │ (x86-32) │  │(32-128MB)│  │TextMode  │  │  Ports   │  │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘  │
+└─────────────────────────────────────────────────────────────┘
+```
 
 </div>
 
-### 🛠️ Kullanılan Teknolojiler
+---
 
-- [Electron](https://www.electronjs.org/) - Desktop framework
-- [Node.js](https://nodejs.org/) - JavaScript runtime
-- [Axios](https://axios-http.com/) - HTTP client
-- [Electron Store](https://github.com/sindresorhus/electron-store) - Data persistence
+### 📚 Katman Detayları
 
-### 📚 İlham Kaynakları
+<details>
+<summary><b>🔽 Detaylı Mimari Açıklaması</b></summary>
 
-- Windows 10/11 UI/UX
-- macOS interface design
-- Linux desktop environments
+#### 1️⃣ Hardware Layer (Donanım Katmanı)
+```
+Doğrudan fiziksel donanım ile etkileşim
+• CPU: x86 32-bit instruction set
+• RAM: Physical memory
+• VGA: Video display adapter
+• I/O: Port-based communication
+```
+
+#### 2️⃣ HAL (Hardware Abstraction Layer)
+```c
+// Port I/O wrapper'ları
+void outb(uint16_t port, uint8_t val);
+uint8_t inb(uint16_t port);
+
+// Interrupt handling
+void register_interrupt_handler(uint8_t n, isr_t handler);
+
+// Memory-mapped I/O
+void* map_physical_memory(uint32_t addr, uint32_t size);
+```
+
+#### 3️⃣ Device Drivers
+```
+┌─ Keyboard Driver (keyboard.c)
+│  • PS/2 keyboard protokolü
+│  • Scancode → ASCII dönüşümü
+│  • Buffer yönetimi
+│
+├─ Mouse Driver (mouse.c)
+│  • PS/2 mouse protokolü
+│  • X/Y koordinat takibi
+│  • Button state management
+│
+├─ VGA Driver (vga.c)
+│  • Text mode 80x25
+│  • 16 renk palette
+│  • Cursor kontrolü
+│
+└─ Timer Driver (timer.c)
+   • PIT (Programmable Interval Timer)
+   • System tick (18.2 Hz)
+   • Delay fonksiyonları
+```
+
+#### 4️⃣ Kernel Services
+```
+┌─ Memory Management
+│  • Heap allocator
+│  • Stack management
+│  • Page frame allocator (geliştirilmekte)
+│
+├─ Process Management
+│  • Task switching (basit)
+│  • Scheduler (geliştirilmekte)
+│  • Context switching
+│
+└─ File System
+   • FAT12 implementation (geliştirilmekte)
+   • VFS (Virtual File System) layer
+```
+
+#### 5️⃣ System Call Interface
+```c
+// Uygulama → Kernel iletişimi
+int syscall(int num, ...);
+
+// Örnek system call'lar:
+SYS_READ, SYS_WRITE, SYS_OPEN, SYS_CLOSE
+SYS_CREATE_WINDOW, SYS_DRAW, SYS_GET_MOUSE
+```
+
+#### 6️⃣ GUI Library
+```
+┌─ Window Manager
+│  • Pencere oluşturma/yok etme
+│  • Z-order (katman) yönetimi
+│  • Focus handling
+│  • Event distribution
+│
+├─ Drawing Primitives
+│  • draw_line(), draw_rect(), draw_circle()
+│  • fill_rect(), draw_text()
+│  • set_pixel(), get_pixel()
+│
+└─ Event System
+   • Mouse events (click, move, drag)
+   • Keyboard events
+   • Window events (resize, close)
+```
+
+#### 7️⃣ Applications
+```
+Kullanıcı uygulamaları, GUI library kullanarak
+window oluşturur ve event'lere cevap verir.
+
+Örnek: Notepad uygulaması
+1. create_window()
+2. Event loop başlat
+3. Keyboard event → metni güncelle
+4. Mouse event → cursor pozisyonu
+5. Draw event → ekrana çiz
+```
+
+</details>
 
 ---
 
-## 🌟 Yıldız Geçmişi
+### 🧬 Boot Süreci
 
 <div align="center">
-
-[![Star History Chart](https://api.star-history.com/svg?repos=FluXX16/FluXOS-Updates&type=Date)](https://star-history.com/#FluXX16/FluXOS-Updates&Date)
-
-</div>
-
----
-
-## 📊 Repository İstatistikleri
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=FluXX16&repo=FluXOS-Updates&show_icons=true&theme=radical)
-
-![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=FluXX16&layout=compact&theme=radical)
-
-</div>
-
----
-
-<div align="center">
-
-## 💖 Projeyi Destekleyin
-
-FluXOS'u beğendiyseniz ⭐ vermeyi unutmayın!
-
-[![Star](https://img.shields.io/github/stars/FluXX16/FluXOS-Updates?style=social)](https://github.com/FluXX16/FluXOS-Updates)
-[![Fork](https://img.shields.io/github/forks/FluXX16/FluXOS-Updates?style=social)](https://github.com/FluXX16/FluXOS-Updates/fork)
-[![Watch](https://img.shields.io/github/watchers/FluXX16/FluXOS-Updates?style=social)](https://github.com/FluXX16/FluXOS-Updates)
-
-</div>
-
----
-
-<div align="center">
-
-**Made with ❤️ by the FluXOS Team**
-
-[⬆ Başa Dön](#-fluxos-güncelleme-merkezi--fluxos-updates-repository)
-
-</div>
-
----
----
----
-
-# 🇬🇧 ENGLISH DOCUMENTATION
-
-## 📋 Table of Contents
-
-- [🌟 Overview](#-overview-en)
-- [✨ Features](#-features-en)
-- [🔧 How It Works](#-how-it-works-en)
-- [📥 Installing Updates](#-installing-updates-en)
-- [📁 Repository Structure](#-repository-structure-en)
-- [🔑 Key Types](#-key-types-en)
-- [📊 Version History](#-version-history-en)
-- [👨‍💻 Developer Notes](#-developer-notes-en)
-- [🛡️ Security](#️-security-en)
-- [📞 Contact](#-contact-en)
-
----
-
-## 🌟 Overview {#overview-en}
-
-<div align="center">
-
-![FluXOS Logo](https://via.placeholder.com/150x150/764ba2/ffffff?text=FluXOS)
-
-**FluXOS** - Modern, secure, and user-friendly Electron-based desktop OS simulator
-
-</div>
-
-This repository hosts the official update files for **FluXOS** operating system. Users can access new features, bug fixes, and performance improvements instantly using update keys.
-
-### 🎯 Project Mission
-
-- **Fast Updates:** Users get instant access to new features
-- **Secure Distribution:** Verified and tested updates
-- **Transparent Process:** Open source, community-driven development
-- **Modular Architecture:** Customized updates based on needs
-
----
-
-## ✨ Features {#features-en}
-
-<div align="center">
-
-| Feature | Description |
-|---------|-------------|
-| 🔐 **Secure Updates** | Safe updates with key-based verification system |
-| 📦 **Modular Structure** | Only changed files are updated, bandwidth saving |
-| 🎯 **One-Click Install** | No complex terminal commands needed |
-| 📝 **Detailed Changelog** | Comprehensive notes for each update |
-| 🚀 **Instant Access** | Fast distribution worldwide via GitHub CDN |
-| 🔄 **Auto Backup** | Automatic system backup before updates |
-| 📊 **Version Control** | Minimum version requirements checking |
-| 🌐 **Multi-Channel** | Public, Beta, and Developer channels |
-
-</div>
-
----
-
-## 🔧 How It Works {#how-it-works-en}
-
-### Update Flow Diagram
 
 ```mermaid
-sequenceDiagram
-    participant U as User
-    participant A as FluXOS App
-    participant G as GitHub API
-    participant F as File System
+graph TD
+    A[💾 BIOS POST] -->|MBR Oku| B[📀 Bootloader Yükle]
+    B --> C{Boot Menü}
+    C -->|1| D[🔧 Kurulum]
+    C -->|2| E[🚀 Boot]
+    C -->|3| F[💿 Disk Tools]
+    C -->|4| G[ℹ️ Hakkında]
     
-    U->>A: Enter Key
-    A->>G: Validate Key
-    G-->>A: Key Valid ✅
-    A->>G: Request File List
-    G-->>A: Files Sent
-    A->>F: Download Files
-    F-->>A: Download Complete
-    A->>U: Update Successful! 🎉
+    D --> H[📊 5 Adım Kurulum]
+    H --> E
+    
+    E --> I[⚡ A20 Aç]
+    I --> J[🔐 Protected Mode]
+    J --> K[📋 GDT Yükle]
+    K --> L[🧠 Kernel'e Atla]
+    L --> M[🖥️ Kernel Init]
+    M --> N[🔌 Driver'ları Yükle]
+    N --> O[🎨 GUI Başlat]
+    O --> P[🪟 Desktop Göster]
+    P --> Q[✅ Hazır!]
 ```
 
-### Technical Details
+</div>
 
-#### 1️⃣ Key Validation Process
+---
 
-```javascript
-// Check key from GitHub
-const keyUrl = `https://raw.githubusercontent.com/FluXX16/FluXOS-Updates/main/keys/${updateKey}.json`;
-const response = await fetch(keyUrl);
-const keyData = await response.json();
+### 💾 Bellek Haritası
 
-if (keyData.valid && keyData.version) {
-  // Continue with update process
-  downloadFiles(keyData.files);
-}
 ```
-
-#### 2️⃣ File Download
-
-```javascript
-// For each file
-for (const file of keyData.files) {
-  const fileUrl = `${baseURL}/updates/${keyData.version}/${file.path}`;
-  const content = await fetch(fileUrl);
-  // Save file
-  await saveFile(file.path, content);
-}
+0x00000000 - 0x000003FF   IVT (Interrupt Vector Table)
+0x00000400 - 0x000004FF   BIOS Data Area
+0x00000500 - 0x00007BFF   Free conventional memory
+0x00007C00 - 0x00007DFF   Bootloader (512 byte)
+0x00007E00 - 0x0007FFFF   Free space
+0x00080000 - 0x0009FFFF   Extended BIOS Data
+0x000A0000 - 0x000BFFFF   Video memory (VGA)
+0x000C0000 - 0x000FFFFF   BIOS ROM
+0x00100000 - 0x????????   Kernel code & data
+0x???????? - 0x????????   Kernel heap
+0x00090000 - 0x????????   Kernel stack
 ```
 
 ---
 
-## 📥 Installing Updates {#installing-updates-en}
-
-<div align="center">
-
-### 🎬 Video Tutorial
-
-![Update Tutorial](https://via.placeholder.com/700x400/667eea/ffffff?text=Video+Tutorial+Coming+Soon)
-
-*Step-by-step update guide - Coming soon!*
-
-</div>
-
-### 🖱️ Step-by-Step Installation
-
-#### Step 1: Launch FluXOS
-
-<div align="center">
-
-![Desktop Screenshot](https://via.placeholder.com/600x400/764ba2/ffffff?text=FluXOS+Desktop)
-
-</div>
-
-Double-click the **⚙️ Settings** icon on your desktop or go to **Start Menu** → **Settings**.
-
-#### Step 2: Find Update Section
-
-<div align="center">
-
-![Settings Panel](https://via.placeholder.com/600x350/667eea/ffffff?text=Settings+Panel)
-
-</div>
-
-Scroll down in the Settings window to find the **"🔑 Update Key"** section.
-
-#### Step 3: Enter Your Key
-
-Paste your update key into the field:
-
-```
-Example Key: FLUXOS-102-PUBLIC
-```
-
-#### Step 4: Apply Update
-
-Click the **"🚀 Apply"** button and wait for the update process to complete.
-
-#### Step 5: Restart
-
-When the update is complete, click the **"🔄 Restart"** button.
-
----
-
-## 📁 Repository Structure {#repository-structure-en}
-
-### 🗂️ Folder Hierarchy
+## 📂 Proje Yapısı
 
 ```
 FluXOS-Updates/
 │
-├── 📂 keys/                          # Update Keys
-│   ├── 🔓 FLUXOS-102-PUBLIC.json     # Public user key
-│   ├── 🧪 FLUXOS-102-BETA-A3F2.json  # Beta test key
-│   ├── 👨‍💻 FLUXOS-103-DEV-X9Z1.json   # Developer key
-│   └── ❌ EXPIRED-101-OLD.json       # Expired key
+├── 📁 src/                          # Kaynak kodlar
+│   ├── 📄 boot.asm                  # Bootloader (Assembly)
+│   ├── 📄 kernel.c                  # Ana kernel (C)
+│   ├── 📄 kernel.h                  # Kernel header
+│   ├── 📄 linker.ld                 # Linker script
+│   │
+│   ├── 📁 drivers/                  # Driver'lar
+│   │   ├── 📄 keyboard.c            # PS/2 klavye
+│   │   ├── 📄 mouse.c               # PS/2 mouse
+│   │   ├── 📄 vga.c                 # VGA text mode
+│   │   ├── 📄 timer.c               # PIT timer
+│   │   └── 📄 rtc.c                 # Real-time clock
+│   │
+│   ├── 📁 gui/                      # GUI sistemi
+│   │   ├── 📄 window.c              # Pencere yönetimi
+│   │   ├── 📄 desktop.c             # Desktop çizimi
+│   │   ├── 📄 draw.c                # Çizim fonksiyonları
+│   │   └── 📄 events.c              # Event handling
+│   │
+│   ├── 📁 apps/                     # Uygulamalar
+│   │   ├── 📄 notepad.c             # Notepad
+│   │   ├── 📄 calculator.c          # Hesap makinesi
+│   │   ├── 📄 sysinfo.c             # Sistem bilgisi
+│   │   ├── 📄 settings.c            # Ayarlar
+│   │   └── 📄 snake.c               # Snake oyunu (beta)
+│   │
+│   ├── 📁 lib/                      # Kütüphaneler
+│   │   ├── 📄 string.c              # String fonksiyonları
+│   │   ├── 📄 memory.c              # Bellek yönetimi
+│   │   └── 📄 stdio.c               # Basit I/O
+│   │
+│   └── 📁 fs/                       # Dosya sistemi (dev)
+│       ├── 📄 fat12.c               # FAT12 implementasyonu
+│       └── 📄 vfs.c                 # Virtual FS
 │
-├── 📂 updates/                       # Update Files
-│   ├── 📂 1.0.2/                     # Version 1.0.2 (Current)
-│   │   ├── 📂 src/
-│   │   │   ├── 📄 index.html
-│   │   │   └── 📂 js/
-│   │   │       └── 📄 main.js
-│   │   ├── 📄 version.json
-│   │   └── 📄 package.json
-│   └── 📂 1.0.3/                     # Version 1.0.3 (In Development)
+├── 📁 build/                        # Build çıktıları
+│   ├── 📄 boot.bin                  # Derlenmiş bootloader
+│   ├── 📄 kernel.bin                # Derlenmiş kernel
+│   └── 📄 fluxos.img                # OS image
 │
-├── 📂 assets/                        # Documentation Images
-├── 📂 scripts/                       # Helper Scripts
-├── 📄 README.md                      # This file
-└── 📄 LICENSE                        # MIT License
+├── 📁 tools/                        # Yardımcı araçlar
+│   ├── 📄 build.sh                  # Build scripti
+│   ├── 📄 run.sh                    # QEMU çalıştırma
+│   ├── 📄 clean.sh                  # Temizlik
+│   ├── 📄 convert.sh                # VirtualBox dönüştürme
+│   └── 📄 test.sh                   # Test scripti
+│
+├── 📁 docs/                         # Dokümantasyon
+│   ├── 📄 ARCHITECTURE.md           # Mimari dokümantasyonu
+│   ├── 📄 API.md                    # API referansı
+│   ├── 📄 CONTRIBUTING.md           # Katkı rehberi
+│   ├── 📄 CHANGELOG.md              # Değişiklik geçmişi
+│   └── 📄 FAQ.md                    # Sıkça sorulan sorular
+│
+├── 📁 assets/                       # Görseller ve medya
+│   ├── 📁 screenshots/              # Ekran görüntüleri
+│   ├── 📁 videos/                   # Demo videoları
+│   └── 📁 logos/                    # Logolar
+│
+├── 📁 tests/                        # Test dosyaları
+│   ├── 📄 test_memory.c             # Bellek testleri
+│   ├── 📄 test_string.c             # String testleri
+│   └── 📄 test_drivers.c            # Driver testleri
+│
+├── 📁 .github/                      # GitHub yapılandırması
+│   ├── 📁 workflows/                # CI/CD
+│   │   └── 📄 build.yml             # Otomatik build
+│   ├── 📄 ISSUE_TEMPLATE.md         # Issue şablonu
+│   └── 📄 PULL_REQUEST_TEMPLATE.md  # PR şablonu
+│
+├── 📄 README.md                     # Bu dosya
+├── 📄 LICENSE                       # MIT Lisansı
+├── 📄 .gitignore                    # Git ignore
+└── 📄 Makefile                      # Make build sistemi
 ```
 
 ---
 
-## 🔑 Key Types {#key-types-en}
+## 📚 Kullanım Kılavuzu
 
-<div align="center">
-
-| Icon | Type | Format | Users | Validity | Features |
-|------|------|--------|-------|----------|----------|
-| 🌐 | **Public** | `FLUXOS-vXXX-PUBLIC` | All users | ∞ Unlimited | Stable releases |
-| 🧪 | **Beta** | `FLUXOS-vXXX-BETA-XXXX` | Beta testers | ⏱️ 30 days | Test features |
-| 👨‍💻 | **Developer** | `FLUXOS-vXXX-DEV-XXXX` | Developers | ∞ Unlimited | Experimental features |
-| 🌟 | **Premium** | `FLUXOS-vXXX-PREM-XXXX` | Premium members | 🔄 1 year | Early access |
-
-</div>
-
----
-
-## 📊 Version History {#version-history-en}
-
-### 🎯 v1.0.2 - "FileManager" (2024-12-08)
-
-<div align="center">
-
-**🔑 Key:** `FLUXOS-102-PUBLIC`
-
-</div>
+### 🎮 Temel Kullanım
 
 <details open>
-<summary>📦 <b>Detailed Changelog</b></summary>
+<summary><b>🔽 Desktop Kullanımı</b></summary>
 
-#### ✨ New Features
+#### 🖱️ Mouse İşlemleri
 
-##### 📁 File Manager
-- Virtual file system
-- Folder creation and management
-- File upload/download
-- Right-click context menu
-- File preview support
+| İşlem | Açıklama |
+|-------|----------|
+| **Sol Tık** | Pencere focus, ikon tıklama, buton tıklama |
+| **Sağ Tık** | Context menü (geliştirilmekte) |
+| **Çift Tık** | Uygulamayı başlat, dosya aç |
+| **Sürükle** | Pencereyi taşı, öğeyi sürükle |
 
-#### 🔧 Improvements
-- Performance optimizations
-- Memory usage reduced by 25%
-- UI enhancements
+#### ⌨️ Klavye Kısayolları
 
-#### 🐛 Bug Fixes
-- Taskbar click issue resolved
-- Window z-index problem fixed
-- Emoji render error corrected
+| Tuş | Açıklama |
+|-----|----------|
+| `Ctrl + C` | Kopyala (geliştirilmekte) |
+| `Ctrl + V` | Yapıştır (geliştirilmekte) |
+| `Ctrl + X` | Kes (geliştirilmekte) |
+| `Alt + F4` | Pencereyi kapat (geliştirilmekte) |
+| `Alt + Tab` | Pencere değiştir (geliştirilmekte) |
+| `Ctrl + Alt + Del` | Sistem kapatma menüsü (planlı) |
 
 </details>
 
 ---
 
-### 🚀 v1.0.0 - "Genesis" (2024-11-01)
+### 📱 Uygulama Kullanımı
 
-<div align="center">
+<details>
+<summary><b>🔽 Notepad</b></summary>
 
-**🔑 Key:** `FLUXOS-100-PUBLIC`
+#### Notepad Özellikleri
 
-🎉 **First Stable Release!** 🎉
+- ✏️ Metin yazma ve düzenleme
+- 📄 Dosya açma/kaydetme (geliştirilmekte)
+- 🔍 Arama (planlı)
+- ↔️ Kaydırılabilir içerik
 
-</div>
+#### Kullanım
 
----
+1. Start → Notepad
+2. Pencerede yazı yazın (geliştirilmekte)
+3. File → Save (geliştirilmekte)
 
-## 👨‍💻 Developer Notes {#developer-notes-en}
+</details>
 
-### 🛠️ Development Environment Setup
+<details>
+<summary><b>🔽 Calculator</b></summary>
+
+#### Calculator Özellikleri
+
+- ➕➖✖️➗ 4 işlem
+- 🔢 Ondalık sayılar
+- 📊 Sonuç gösterme
+- 🧮 Bilimsel fonksiyonlar (geliştirilmekte)
+
+#### Kullanım
+
+1. Start → Calculator
+2. Sayılara ve işlemlere tıklayın
+3. = butonuna basın
+
+</details>
+
+<details>
+<summary><b>
+
+#### Fedora/RHEL/CentOS
 
 ```bash
-# Clone repository
+# Sistem güncellemesi
+sudo dnf update -y
+
+# Gerekli paketleri kurun
+sudo dnf install -y \
+    nasm \
+    gcc \
+    gcc-c++ \
+    make \
+    binutils \
+    qemu-system-x86 \
+    VirtualBox \
+    git
+
+# 32-bit desteği
+sudo dnf install -y glibc-devel.i686 libgcc.i686
+
+# FluXOS'u klonlayın
 git clone https://github.com/FluXX16/FluXOS-Updates.git
 cd FluXOS-Updates
-
-# Install dependencies
-npm install
-```
-
-### 📦 Publishing New Updates
-
-#### 1. Create Version Folder
-
-```bash
-mkdir -p updates/1.0.3/src/{js,css}
-```
-
-#### 2. Generate Key
-
-```bash
-node scripts/generate-key.js --version 1.0.3 --type PUBLIC
-```
-
-#### 3. Push to GitHub
-
-```bash
-git add .
-git commit -m "🚀 Release v1.0.3"
-git push origin main
-```
-
----
-
-## 🛡️ Security {#security-en}
-
-### 🔐 Key Security Measures
-
-- Rate limiting (10 attempts per hour)
-- File integrity verification (SHA-256)
-- Automatic key expiration
-- Audit logging
-
-### 🚨 Security Best Practices
-
-✅ **Do:**
-- Distribute keys through secure channels
-- Provide changelog for each update
-- Verify file checksums
-- Apply rate limiting
-
-❌ **Don't:**
-- Share Beta/Dev keys publicly
-- Delete expired keys
-- Hardcode keys in source
-
----
-
-## 📞 Contact and Support {#contact-en}
-
-<div align="center">
-
-### 💬 Community and Support
-
-[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/fluxos)
-[![GitHub Issues](https://img.shields.io/badge/GitHub-Report_Issue-181717?style=for-the-badge&logo=github)](https://github.com/FluXX16/FluXOS/issues)
-[![Email](https://img.shields.io/badge/Email-Contact_Us-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:support@fluxos.dev)
-
-</div>
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 🙏 Acknowledgments
-
-<div align="center">
-
-[![Contributors](https://contrib.rocks/image?repo=FluXX16/FluXOS-Updates)](https://github.com/FluXX16/FluXOS-Updates/graphs/contributors)
-
-**Thank you to all contributors!** 🎉
-
-</div>
-
----
-
-<div align="center">
-
-## 💖 Support the Project
-
-If you like FluXOS, don't forget to give it a ⭐!
-
-[![Star](https://img.shields.io/github/stars/FluXX16/FluXOS-Updates?style=social)](https://github.com/FluXX16/FluXOS-Updates)
-
-**Made with ❤️ by the FluXOS Team**
-
-[⬆ Back to Top](#-fluxos-güncelleme-merkezi--fluxos-updates-repository)
-
-</div>
